@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomasandabove/GBO@main/behaviours/behaviours-tab.css">
+</head>
+<body>
+    <div class="container-inner">
+        <div class="conatiner-arrow-top-right w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <path d="M1.5 0L1.5 27.7643" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
+            <path d="M21.7283 48L49.5 48" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
+            <path d="M15.2501 34.2543L38.8633 10.6406" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
+          </svg></div>
+        <div class="conatiner-shape-bottom-left w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+            <path d="M107.333 107.014C101.62 112.202 100.14 121.655 93.2352 124.685C84.9883 128.31 76.9107 129.458 68.369 125.155C59.0811 120.476 55.751 133.768 35.0804 124.829C28.1567 121.837 26.3191 112.754 21.0135 107.158C15.9776 101.851 6.53283 100.126 3.59154 93.7029C-6.16052 72.35 7.59899 70.1609 2.54422 58.8446C-3.92789 44.3731 2.70727 28.7975 17.6709 23.6349C19.8283 22.8885 22.6567 20.6616 23.3026 18.6229C28.3825 2.54553 44.6631 -4.36718 59.8462 2.85917C68.9586 7.2 71.7305 -5.46494 92.8088 3.01599C99.9582 5.88897 101.614 15.6057 107.208 20.9878C112.802 26.3699 121.858 28.1012 124.837 35.0452C133.774 55.8775 120.434 58.738 125.188 68.3857C129.189 76.5028 128.412 84.4129 125.088 92.392C122.159 99.4239 113.429 101.475 107.327 107.014H107.333Z" fill="#34A854"></path>
+          </svg></div>
+        <div class="pitch_tab is-blue">
+          <div class="hide w-embed">
+            <style>
+            .pitch_tab-link.is-blue.open .pitch_tab-link-icon {
+              background-color: #fff;
+              color: #4682f4;
+            }
+      
+            .pitch_tab-link.is-red.open .pitch_tab-link-icon {
+              background-color: #fff;
+              color: #ea4336;
+            }
+      
+            .pitch_tab-link.is-yellow.open .pitch_tab-link-icon {
+              background-color: #fff;
+              color: #202124;
+            }
+      
+            .pitch_tab-link.is-green.open .pitch_tab-link-icon {
+              background-color: #fff;
+              color: #34a854;
+            }
+      
+            .pitch_tab-link.is-gray.open .pitch_tab-link-icon {
+              background-color: #fff;
+              color: #80868b;
+            }
+      
+            .pitch_dropdown.open .button.icon {
+              transform: rotate(45deg);
+            }
+            </style>
+          </div>
+          <div class="pitch_tab-links">
+            <div class="pitch_tab-link is-blue open">
+              <div class="pitch_tab-link-icon">
+                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_4277_6826" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="#D9D9D9"></rect>
+                    </mask>
+                    <g mask="url(#mask0_4277_6826)">
+                      <path d="M11.7029 19.9425C11.8335 19.9425 11.9674 19.913 12.1046 19.854C12.2418 19.7951 12.3527 19.7234 12.4374 19.6387L20.2336 11.8425C20.4848 11.5913 20.6787 11.3343 20.8154 11.0715C20.9519 10.8086 21.0201 10.5201 21.0201 10.206C21.0201 9.88796 20.9519 9.57929 20.8154 9.27996C20.6787 8.98062 20.4848 8.70721 20.2336 8.45971L16.4836 4.70971C16.2361 4.45854 15.9819 4.27429 15.7211 4.15696C15.4601 4.03962 15.1707 3.98096 14.8529 3.98096C14.5387 3.98096 14.247 4.03962 13.9779 4.15696C13.7085 4.27429 13.4547 4.45854 13.2164 4.70971L12.3451 5.58096L14.1951 7.43671C14.3938 7.63154 14.5419 7.85337 14.6394 8.10221C14.7367 8.35087 14.7854 8.60337 14.7854 8.85971C14.7854 9.38037 14.6152 9.81087 14.2749 10.1512C13.9345 10.4915 13.5041 10.6617 12.9836 10.6617C12.7271 10.6617 12.4768 10.6226 12.2326 10.5445C11.9884 10.4663 11.7689 10.3297 11.5739 10.1347L9.66036 8.22721L5.34311 12.5445C5.24194 12.6458 5.16603 12.7609 5.11536 12.8897C5.06469 13.0185 5.03936 13.1483 5.03936 13.279C5.03936 13.515 5.11503 13.7095 5.26636 13.8627C5.41753 14.0159 5.61111 14.0925 5.84711 14.0925C5.97778 14.0925 6.11169 14.063 6.24886 14.004C6.38603 13.9451 6.49694 13.8734 6.58161 13.7887L9.75086 10.6195L10.4586 11.3272L7.29511 14.4965C7.19378 14.5976 7.11778 14.7126 7.06711 14.8415C7.01661 14.9703 6.99136 15.1001 6.99136 15.231C6.99136 15.4541 7.07019 15.6445 7.22786 15.8022C7.38553 15.9599 7.57586 16.0387 7.79886 16.0387C7.92969 16.0387 8.06369 16.0092 8.20086 15.9502C8.33803 15.8912 8.44894 15.8194 8.53361 15.7347L11.9336 12.3407L12.6414 13.0482L9.24711 16.4482C9.15861 16.5329 9.08586 16.6438 9.02886 16.781C8.97169 16.9181 8.94311 17.0521 8.94311 17.183C8.94311 17.406 9.02194 17.5963 9.17961 17.754C9.33744 17.9118 9.52786 17.9907 9.75086 17.9907C9.88169 17.9907 10.0115 17.9654 10.1404 17.9147C10.2692 17.864 10.3842 17.788 10.4854 17.6867L13.8854 14.2925L14.5931 15.0002L11.1931 18.4002C11.0919 18.5015 11.016 18.623 10.9654 18.7647C10.9147 18.9064 10.8894 19.0361 10.8894 19.154C10.8894 19.39 10.9724 19.5804 11.1384 19.7252C11.3044 19.87 11.4925 19.9425 11.7029 19.9425ZM11.6971 20.9425C11.1829 20.9425 10.7429 20.7544 10.3769 20.3782C10.0109 20.0019 9.85028 19.5374 9.89511 18.9847C9.32844 18.9912 8.85661 18.822 8.47961 18.4772C8.10278 18.1322 7.92394 17.6508 7.94311 17.033C7.32528 17.0393 6.83844 16.8627 6.48261 16.5032C6.12678 16.1435 5.96494 15.6695 5.99711 15.081C5.44061 15.0875 4.97519 14.931 4.60086 14.6117C4.22653 14.2925 4.03936 13.8483 4.03936 13.279C4.03936 13.0226 4.08903 12.766 4.18836 12.509C4.28769 12.2518 4.43478 12.0258 4.62961 11.831L9.66036 6.80596L12.2431 9.38871C12.3278 9.47721 12.4323 9.54996 12.5566 9.60696C12.6809 9.66396 12.8214 9.69246 12.9779 9.69246C13.1919 9.69246 13.3809 9.61779 13.5451 9.46846C13.7093 9.31912 13.7914 9.12454 13.7914 8.88471C13.7914 8.72837 13.7628 8.58804 13.7056 8.46371C13.6486 8.33937 13.5759 8.23487 13.4874 8.15021L10.0471 4.70971C9.79961 4.45854 9.54219 4.27429 9.27486 4.15696C9.00753 4.03962 8.71494 3.98096 8.39711 3.98096C8.08294 3.98096 7.79769 4.03962 7.54136 4.15696C7.28486 4.27429 7.03094 4.45854 6.77961 4.70971L3.73536 7.75971C3.52136 7.97387 3.34836 8.22904 3.21636 8.52521C3.08419 8.82137 3.01428 9.12712 3.00661 9.44246C2.99894 9.66812 3.01819 9.88512 3.06436 10.0935C3.11053 10.3018 3.18361 10.4976 3.28361 10.681L2.52586 11.4387C2.35786 11.1707 2.22644 10.862 2.13161 10.5127C2.03678 10.1634 1.99319 9.80662 2.00086 9.44246C2.00853 8.98862 2.09953 8.55371 2.27386 8.13771C2.44819 7.72171 2.69761 7.35154 3.02211 7.02721L6.04711 4.00221C6.39578 3.65721 6.76469 3.40079 7.15386 3.23296C7.54286 3.06496 7.96369 2.98096 8.41636 2.98096C8.86886 2.98096 9.28644 3.06496 9.66911 3.23296C10.0518 3.40079 10.4155 3.65721 10.7604 4.00221L11.6316 4.87321L12.5029 4.00221C12.8515 3.65721 13.2172 3.40079 13.5999 3.23296C13.9825 3.06496 14.4002 2.98096 14.8529 2.98096C15.3054 2.98096 15.7262 3.06496 16.1154 3.23296C16.5044 3.40079 16.8714 3.65721 17.2164 4.00221L20.9414 7.72721C21.2862 8.07204 21.5522 8.45921 21.7394 8.88871C21.9265 9.31821 22.0201 9.75921 22.0201 10.2117C22.0201 10.6644 21.9265 11.082 21.7394 11.4647C21.5522 11.8474 21.2862 12.2111 20.9414 12.556L13.1451 20.3465C12.9374 20.5541 12.7114 20.7054 12.4671 20.8002C12.2229 20.895 11.9663 20.9425 11.6971 20.9425Z" fill="currentColor"></path>
+                    </g>
+                  </svg></div>
+              </div>
+              <div>Forge Trust Alliances</div>
+            </div>
+            <div class="pitch_tab-link is-red">
+              <div class="pitch_tab-link-icon is-red">
+                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_4277_6832" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="#D9D9D9"></rect>
+                    </mask>
+                    <g mask="url(#mask0_4277_6832)">
+                      <path d="M8.49425 20.2895C7.39942 19.8157 6.44683 19.1737 5.6365 18.3635C4.82633 17.5532 4.18433 16.6006 3.7105 15.5057C3.23683 14.4109 3 13.2423 3 12C3 10.3948 3.39008 8.90667 4.17025 7.5355C4.95042 6.16433 6.03017 5.073 7.4095 4.2615C7.439 4.42433 7.466 4.58817 7.4905 4.753C7.51483 4.91767 7.55325 5.10125 7.60575 5.30375C6.46992 6.04992 5.585 7.01117 4.951 8.1875C4.317 9.36383 4 10.6347 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 10.6347 19.6798 9.35967 19.0395 8.175C18.399 6.99033 17.5025 6.02492 16.35 5.27875C16.4025 5.08908 16.4442 4.91508 16.475 4.75675C16.5058 4.59842 16.5379 4.43333 16.5712 4.2615C17.9508 5.073 19.0337 6.16342 19.8202 7.53275C20.6068 8.90192 21 10.391 21 12C21 13.2423 20.7632 14.4109 20.2895 15.5057C19.8157 16.6006 19.1737 17.5532 18.3635 18.3635C17.5532 19.1737 16.6006 19.8157 15.5057 20.2895C14.4109 20.7632 13.2423 21 12 21C10.7577 21 9.58908 20.7632 8.49425 20.2895ZM8.4615 15.5385C7.48717 14.5642 7 13.3847 7 12C7 11.3025 7.13558 10.641 7.40675 10.0155C7.67792 9.38983 8.06417 8.84492 8.5655 8.38075C8.62317 8.54108 8.6795 8.70358 8.7345 8.86825C8.78967 9.03308 8.85575 9.2225 8.93275 9.4365C8.63008 9.79417 8.399 10.1935 8.2395 10.6345C8.07983 11.0757 8 11.5308 8 12C8 13.1 8.39167 14.0417 9.175 14.825C9.95833 15.6083 10.9 16 12 16C13.1 16 14.0417 15.6083 14.825 14.825C15.6083 14.0417 16 13.1 16 12C16 11.518 15.917 11.0628 15.751 10.6345C15.585 10.2063 15.3507 9.807 15.048 9.4365C15.1045 9.28017 15.126 9.22667 15.1125 9.276C15.099 9.32533 15.198 9.0205 15.4095 8.3615C15.9237 8.82567 16.3173 9.37375 16.5905 10.0057C16.8635 10.6377 17 11.3025 17 12C17 13.3847 16.5128 14.5642 15.5385 15.5385C14.5642 16.5128 13.3847 17 12 17C10.6153 17 9.43583 16.5128 8.4615 15.5385ZM11.3845 8C10.7678 6.14617 10.3829 4.91383 10.2298 4.303C10.0766 3.692 10 3.091 10 2.5C10 1.941 10.1936 1.46792 10.5808 1.08075C10.9679 0.693583 11.441 0.5 12 0.5C12.559 0.5 13.0321 0.693583 13.4193 1.08075C13.8064 1.46792 14 1.941 14 2.5C14 3.091 13.9234 3.692 13.7703 4.303C13.6171 4.91383 13.2322 6.14617 12.6155 8H11.3845ZM10.9338 13.0662C10.6446 12.7773 10.5 12.4218 10.5 12C10.5 11.5782 10.6446 11.2227 10.9338 10.9337C11.2227 10.6446 11.5782 10.5 12 10.5C12.4218 10.5 12.7773 10.6446 13.0663 10.9337C13.3554 11.2227 13.5 11.5782 13.5 12C13.5 12.4218 13.3554 12.7773 13.0663 13.0662C12.7773 13.3554 12.4218 13.5 12 13.5C11.5782 13.5 11.2227 13.3554 10.9338 13.0662Z" fill="currentColor"></path>
+                    </g>
+                  </svg></div>
+              </div>
+              <div>Align on ambitious goals</div>
+            </div>
+            <div class="pitch_tab-link is-yellow">
+              <div class="pitch_tab-link-icon is-yellow">
+                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_4277_6838" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="#202124"></rect>
+                    </mask>
+                    <g mask="url(#mask0_4277_6838)">
+                      <path d="M12 19.8848C11.6308 19.8848 11.3129 19.7773 11.0463 19.5625C10.7796 19.3478 10.6232 19.0719 10.577 18.7348H10C9.732 18.7348 9.49833 18.635 9.299 18.4355C9.09967 18.2362 9 18.0025 9 17.7345V14.723C7.96533 14.15 7.165 13.3686 6.599 12.3787C6.033 11.3891 5.75 10.3462 5.75 9.25C5.75 7.5025 6.35483 6.024 7.5645 4.8145C8.774 3.60483 10.2525 3 12 3C13.7475 3 15.226 3.60483 16.4355 4.8145C17.6452 6.024 18.25 7.5025 18.25 9.25C18.25 10.3538 17.967 11.3987 17.401 12.3845C16.835 13.3705 16.0347 14.15 15 14.723V17.7345C15 18.0025 14.9003 18.2362 14.701 18.4355C14.5017 18.635 14.268 18.7348 14 18.7348H13.423C13.3768 19.0719 13.2204 19.3478 12.9538 19.5625C12.6871 19.7773 12.3692 19.8848 12 19.8848ZM10 17.7345H14V16.7578H10V17.7345ZM10 15.9885H14V15H10V15.9885ZM9.8 14H11.5578V10.877L9.473 8.79225L10.1 8.1655L12 10.0655L13.9 8.1655L14.527 8.79225L12.4423 10.877V14H14.2C15.1 13.5667 15.8333 12.9292 16.4 12.0875C16.9667 11.2458 17.25 10.3 17.25 9.25C17.25 7.78333 16.7417 6.54167 15.725 5.525C14.7083 4.50833 13.4667 4 12 4C10.5333 4 9.29167 4.50833 8.275 5.525C7.25833 6.54167 6.75 7.78333 6.75 9.25C6.75 10.3 7.03333 11.2458 7.6 12.0875C8.16667 12.9292 8.9 13.5667 9.8 14Z" fill="currentColor"></path>
+                    </g>
+                  </svg></div>
+              </div>
+              <div>Win with unique value</div>
+            </div>
+            <div class="pitch_tab-link is-green">
+              <div class="pitch_tab-link-icon is-green">
+                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_4277_6844" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="#D9D9D9"></rect>
+                    </mask>
+                    <g mask="url(#mask0_4277_6844)">
+                      <path d="M2 19V14.2885H3.69225V19H2ZM6.577 19V12.423H8.26925V19H6.577ZM11.1538 19V9.65375H12.8462V19H11.1538ZM15.7308 19V7.7885H17.423V19H15.7308ZM20.3078 19V5H22V19H20.3078Z" fill="currentColor"></path>
+                    </g>
+                  </svg></div>
+              </div>
+              <div>Maximize impact, prove the value</div>
+            </div>
+            <div class="pitch_tab-link is-gray">
+              <div class="pitch_tab-link-icon is-grey">
+                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_4277_6850" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="#D9D9D9"></rect>
+                    </mask>
+                    <g mask="url(#mask0_4277_6850)">
+                      <path d="M20.8965 18.0078L18.608 15.7L19.2965 15.0115L21.604 17.3L20.8965 18.0078ZM17.7002 6.373L17.0117 5.6845L19.3002 3.39625L20.008 4.0845L17.7002 6.373ZM6.30023 6.39225L4.01173 4.0845L4.70023 3.39625L7.00798 5.6845L6.30023 6.39225ZM3.08473 18.0078L2.39648 17.3L4.68473 15.0115L5.39248 15.7L3.08473 18.0078ZM7.96573 17.8828L12.0002 15.4635L16.054 17.927L14.9982 13.3463L18.5425 10.2923L13.8732 9.87125L12.0002 5.548L10.1465 9.84625L5.47723 10.248L9.02148 13.3463L7.96573 17.8828ZM6.44073 20L7.91173 13.725L3.00023 9.48075L9.46948 8.93275L12.0002 3L14.5502 8.93275L21.0195 9.48075L16.108 13.725L17.579 20L12.0002 16.6595L6.44073 20Z" fill="currentColor"></path>
+                    </g>
+                  </svg></div>
+              </div>
+              <div>Showcase success, spark growth</div>
+            </div>
+          </div>
+          <div class="pitch_tab-content">
+            <div class="pitch_tab-panel is-blue" style="display: block;">
+              <div class="pitch_tab-content-heading">
+                <div class="display-sm">Focus on:</div>
+                <div class="text-size-xlarge">Develop &amp; maintain deep, purposeful relationships to ensure our right to win</div>
+              </div>
+              <div class="display-sm">The How:</div>
+              <div class="pitch_tab-dropdown-list">
+                <div class="pitch_dropdown">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Keep a pulse on decision-makers &amp; influencers</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pitch_dropdown">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Understand evolving business needs</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pitch_dropdown">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Elevate yourself as a trusted partner</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pitch_tab-panel is-red" style="display: none;">
+              <div class="pitch_tab-content-heading">
+                <div class="display-sm">Focus on:</div>
+                <div class="text-size-xlarge">Craft and pitch differentiated solutions that achieve customer goals &amp; showcase competitive advantage</div>
+              </div>
+              <div class="display-sm">The How:</div>
+              <div class="pitch_tab-dropdown-list">
+                <div class="pitch_dropdown is-red">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Leverage the power of our integrated suite</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pitch_dropdown is-red">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Ground ambition in data &amp; contextual relevance</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pitch_dropdown is-red">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Clearly highlight our unique value proposition</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pitch_tab-panel is-yellow" style="display: none;">
+              <div class="pitch_tab-content-heading">
+                <div class="display-sm">Focus on:</div>
+                <div class="text-size-xlarge">Transform the ambition into realized ROI through flawless execution</div>
+              </div>
+              <div class="display-sm">The How:</div>
+              <div class="pitch_tab-dropdown-list">
+                <div class="pitch_dropdown is-yellow">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Measure and maximize the value we deliver</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pitch_dropdown is-yellow">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Own the implementation with key partners</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pitch_dropdown is-yellow">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Ensure flawless, timely execution</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pitch_tab-panel is-green" style="display: none;">
+              <div class="pitch_tab-content-heading">
+                <div class="display-sm">Focus on:</div>
+                <div class="text-size-xlarge">Build on proven success to upsell and scale</div>
+              </div>
+              <div class="display-sm">The How:</div>
+              <div class="pitch_tab-dropdown-list">
+                <div class="pitch_dropdown is-green">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Translate pain points into product</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pitch_dropdown is-green">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Orchestrate success &amp; scale</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pitch_dropdown is-green">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Lay the foundation for long-term growth</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pitch_tab-panel is-grey" style="display: none;">
+              <div class="pitch_tab-content-heading">
+                <div class="display-sm">Focus on:</div>
+                <div class="text-size-xlarge">Co-create a vision that defies the status quo and demands growth</div>
+              </div>
+              <div class="display-sm">The How:</div>
+              <div class="pitch_tab-dropdown-list">
+                <div class="pitch_dropdown is-gray">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Develop data-driven goals &amp; opportunities</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pitch_dropdown is-gray">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Ignite bigger aspirations with your clients</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pitch_dropdown is-gray">
+                  <div class="pitch_dropdown-top">
+                    <div class="pitch_dropdown-title-wrapper">
+                      <div class="text-size-xlarge text-weight-medium">Develop a clear plan to achieve ambitious goals</div>
+                    </div>
+                    <div class="button icon">
+                      <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="pitch_dropdown-content" style="height: 0px;">
+                    <div class="pitch_dropdown-content-inner">
+                      <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                      <ul role="list" class="pitch_dropdown-list">
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                        <li>
+                          <p class="text-size-large">Continuously identify, tier and refresh key decision-makers &amp; influencers. Leverage account context and historical insights to design customized outreach plans. Log stakeholder map into Connect Sales</p>
+                        </li>
+                      </ul>
+                      <div class="pitch_dropdown-link-wrapper">
+                        <div class="text-size-large text-weight-medium">Resources:</div>
+                        <div class="pitch_dropdown-link-list"><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Connect Sales in Meet</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Meeting Feedback</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a><a href="#" class="button tertiary is-white w-inline-block">
+                            <div>Contacts &amp; Meetings</div>
+                            <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 15.8333H4.16667V4.16667H10V2.5H4.16667C3.24167 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.24167 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V10H15.8333V15.8333ZM11.6667 2.5V4.16667H14.6583L6.46667 12.3583L7.64167 13.5333L15.8333 5.34167V8.33333H17.5V2.5H11.6667Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
