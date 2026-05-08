@@ -1,26 +1,7 @@
-/* Yellow for app */
-.card.is-product.is-app .tag {
-    background-color: #fabe04;
-    color: #202124;
-  }
-  
-  /* Red for YouTube */
-  .card.is-product.is-youtube .tag {
-    background-color: #ea4336;
-  }
-  
-  /* Green for measurements */
-  .card.is-product.is-measurements .tag {
-    background-color: #34a854;
-  }
-  
-    
-    .product-dropdown.open .button.icon {
-      transform: rotate(45deg);
-    }
-  
-  /* Green for measurements */
-  .card.is-product:hover .button.secondary {
-    background-color: #202124;
-    color: white;
-  }
+body {
+  margin: 0;
+  font-family: "Google Sans", Arial, sans-serif;
+  color: #202124;
+  font-size: 16px;
+  line-height: 1.5;
+}
