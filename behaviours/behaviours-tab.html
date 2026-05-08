@@ -6,9 +6,9 @@
 <body>
     <div class="container-inner">
         <div class="conatiner-arrow-top-right w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-            <path d="M1.5 0L1.5 27.7643" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
-            <path d="M21.7283 48L49.5 48" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
-            <path d="M15.2501 34.2543L38.8633 10.6406" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
+            <path d="M1.5 0L1.5 27.7643" stroke="white" stroke-width="3" stroke-miterlimit="10"></path>
+            <path d="M21.7283 48L49.5 48" stroke="white" stroke-width="3" stroke-miterlimit="10"></path>
+            <path d="M15.2501 34.2543L38.8633 10.6406" stroke="white" stroke-width="3" stroke-miterlimit="10"></path>
           </svg></div>
         <div class="conatiner-shape-bottom-left w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
             <path d="M107.333 107.014C101.62 112.202 100.14 121.655 93.2352 124.685C84.9883 128.31 76.9107 129.458 68.369 125.155C59.0811 120.476 55.751 133.768 35.0804 124.829C28.1567 121.837 26.3191 112.754 21.0135 107.158C15.9776 101.851 6.53283 100.126 3.59154 93.7029C-6.16052 72.35 7.59899 70.1609 2.54422 58.8446C-3.92789 44.3731 2.70727 28.7975 17.6709 23.6349C19.8283 22.8885 22.6567 20.6616 23.3026 18.6229C28.3825 2.54553 44.6631 -4.36718 59.8462 2.85917C68.9586 7.2 71.7305 -5.46494 92.8088 3.01599C99.9582 5.88897 101.614 15.6057 107.208 20.9878C112.802 26.3699 121.858 28.1012 124.837 35.0452C133.774 55.8775 120.434 58.738 125.188 68.3857C129.189 76.5028 128.412 84.4129 125.088 92.392C122.159 99.4239 113.429 101.475 107.327 107.014H107.333Z" fill="#34A854"></path>
@@ -822,5 +822,129 @@
           </div>
         </div>
       </div>
+
+      <style>
+        .pitch_dropdown-content {
+          overflow: hidden;
+          transition: height 600ms ease;
+        }
+      </style>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const tabColorClasses = ['is-blue', 'is-red', 'is-yellow', 'is-green', 'is-gray'];
+      
+          const tabs = document.querySelectorAll('.pitch_tab');
+      
+          tabs.forEach((tab) => {
+            const links = tab.querySelectorAll('.pitch_tab-link');
+            const panels = tab.querySelectorAll('.pitch_tab-panel');
+      
+            if (!links.length || !panels.length) return;
+      
+            function updateTabColorClass(activeLink) {
+              // Remove existing colour classes from .pitch_tab
+              tabColorClasses.forEach((className) => {
+                tab.classList.remove(className);
+              });
+      
+              // Add the colour class from the selected tab link
+              tabColorClasses.forEach((className) => {
+                if (activeLink.classList.contains(className)) {
+                  tab.classList.add(className);
+                }
+              });
+            }
+      
+            function showPanel(activeIndex) {
+              links.forEach((link, index) => {
+                link.classList.toggle('open', index === activeIndex);
+              });
+      
+              panels.forEach((panel, index) => {
+                panel.style.display = index === activeIndex ? 'block' : 'none';
+              });
+      
+              const activeLink = links[activeIndex];
+              updateTabColorClass(activeLink);
+      
+              // Refresh dropdown heights inside the active panel
+              const activePanel = panels[activeIndex];
+              const openDropdowns = activePanel.querySelectorAll('.pitch_dropdown.open');
+      
+              openDropdowns.forEach((dropdown) => {
+                const content = dropdown.querySelector('.pitch_dropdown-content');
+      
+                if (content) {
+                  content.style.height = 'auto';
+                }
+              });
+            }
+      
+            // Start on the link that already has .open
+            let startingIndex = Array.from(links).findIndex((link) => link.classList.contains('open'));
+      
+            // Fallback to first tab
+            if (startingIndex === -1) {
+              startingIndex = 0;
+            }
+      
+            showPanel(startingIndex);
+      
+            links.forEach((link, index) => {
+              link.addEventListener('click', function () {
+                showPanel(index);
+              });
+            });
+          });
+      
+          const dropdowns = document.querySelectorAll('.pitch_dropdown');
+      
+          dropdowns.forEach((dropdown) => {
+            const trigger = dropdown.querySelector('.pitch_dropdown-top');
+            const content = dropdown.querySelector('.pitch_dropdown-content');
+      
+            if (!trigger || !content) return;
+      
+            // Set starting state
+            if (dropdown.classList.contains('open')) {
+              content.style.height = content.scrollHeight + 'px';
+      
+              setTimeout(() => {
+                if (dropdown.classList.contains('open')) {
+                  content.style.height = 'auto';
+                }
+              }, 600);
+            } else {
+              content.style.height = '0px';
+            }
+      
+            trigger.addEventListener('click', function () {
+              const isOpen = dropdown.classList.contains('open');
+      
+              if (isOpen) {
+                // Close
+                content.style.height = content.scrollHeight + 'px';
+      
+                requestAnimationFrame(() => {
+                  dropdown.classList.remove('open');
+                  content.style.height = '0px';
+                });
+              } else {
+                // Open
+                dropdown.classList.add('open');
+                content.style.height = content.scrollHeight + 'px';
+      
+                setTimeout(() => {
+                  if (dropdown.classList.contains('open')) {
+                    content.style.height = 'auto';
+                  }
+                }, 600);
+              }
+            });
+          });
+        });
+      </script>
+      
 </body>
 </html>
