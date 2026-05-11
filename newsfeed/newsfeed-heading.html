@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomasandabove/GBO@main/global.css">
+</head>
+ <body>
+    <div class="subhero-container">
+        <div class="subhero_heading"><span class="display-3xl">The</span><span class="display-3xl">&nbsp;</span>
+          <div class="subhero_heading-underline-wrapper"><span class="display-3xl">Newsfeed</span>
+            <div class="subhero_heading-underline" style="width: 100%; transition: width 600ms 200ms; overflow: hidden;"></div>
+          </div>
+          <div class="subhero_heading-arrow is-newsfeed w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="127" height="49" viewBox="0 0 127 49" fill="none">
+              <path d="M126.731 24.2124C112.071 24.2124 99.8082 13.9474 96.7383 0.212409" stroke="#202124" stroke-width="1.94795" stroke-miterlimit="10"></path>
+              <path d="M126.731 24.2124C112.071 24.2124 99.8082 34.4774 96.7383 48.2124" stroke="#202124" stroke-width="1.94795" stroke-miterlimit="10"></path>
+              <path d="M0 24.2124H121.785" stroke="#202124" stroke-width="1.94795" stroke-miterlimit="10"></path>
+            </svg></div>
+        </div>
+        <div class="max-880px">
+          <div class="display-xs text-weight-normal">Welcome to your newfeed, which consolidates all of your critical product and leadership news. Check back regularly for new updates</div>
+        </div>
+             
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const underline = document.querySelector(".subhero_heading-underline");
+            
+              if (!underline) return;
+            
+              // Set the starting state
+              underline.style.width = "0%";
+              underline.style.transition = "none";
+              underline.style.overflow = "hidden";
+            
+              // Force browser to register the 0% width before animating
+              underline.offsetWidth;
+            
+              // Animate to 100% after 0.2s delay
+              requestAnimationFrame(() => {
+                underline.style.transition = "width 600ms ease 200ms";
+                underline.style.width = "100%";
+              });
+            });
+            </script>
+      </div>
+</body>
+</html>  
