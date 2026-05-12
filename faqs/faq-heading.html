@@ -1,44 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomasandabove/GBO@main/global.css">
-</head>
-<body>
-    <div class="container">
-        <div class="subhero-container">
-            <div class="subhero_heading"><span class="display-3xl">Frequently</span><span
-                    class="display-3xl">&nbsp;</span><span class="display-3xl">Asked</span><span
-                    class="display-3xl">&nbsp;</span>
-                <div class="subhero_heading-underline-wrapper"><span class="display-3xl">Questions</span>
-                    <div class="subhero_heading-underline"></div>
-                </div>
-            </div>
-            <div class="max-880px">
-                <div class="display-xs text-weight-normal">Welcome to your newfeed, which consolidates all of your critical
-                    product and leadership news. Check back regularly for new updates</div>
-            </div>
-        </div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomasandabove/GBO@main/global.css?v=8">
+
+<div class="container">
+  <div class="subhero-container">
+    <div class="subhero_heading">
+      <span class="display-3xl">Frequently</span>
+      <span class="display-3xl">&nbsp;</span>
+      <span class="display-3xl">Asked</span>
+      <span class="display-3xl">&nbsp;</span>
+
+      <div class="subhero_heading-underline-wrapper">
+        <span class="display-3xl">Questions</span>
+        <div class="subhero_heading-underline"></div>
+      </div>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const underline = document.querySelector(".subhero_heading-underline");
-        
-          if (!underline) return;
-        
-          // Set the starting state
-          underline.style.width = "0%";
-          underline.style.transition = "none";
-          underline.style.overflow = "hidden";
-        
-          // Force browser to register the 0% width before animating
-          underline.offsetWidth;
-        
-          // Animate to 100% after 0.2s delay
-          requestAnimationFrame(() => {
-            underline.style.transition = "width 600ms ease 200ms";
-            underline.style.width = "100%";
-          });
-        });
-        </script>
-</body>
-</html>
+
+    <div class="max-880px">
+      <div class="display-xs text-weight-normal">
+        Find answers to common questions and get the information you need quickly.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function animateSubheroUnderline() {
+    const underline = document.querySelector(".subhero_heading-underline");
+
+    if (!underline) return;
+
+    underline.style.width = "0%";
+    underline.style.transition = "none";
+    underline.style.overflow = "hidden";
+
+    underline.offsetWidth;
+
+    requestAnimationFrame(() => {
+      underline.style.transition = "width 600ms ease 200ms";
+      underline.style.width = "100%";
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", animateSubheroUnderline);
+  } else {
+    animateSubheroUnderline();
+  }
+</script>

@@ -1,53 +1,62 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomasandabove/GBO@main/global.css?v=6">
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-</head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomasandabove/GBO@main/global.css">
-<body>
-    <div class="subhero-container">
-        <div class="subhero_heading"><span class="subhero_heading-icon-wrapper">
-            <div class="subhero_heading-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="68" height="70" viewBox="0 0 68 70" fill="none">
-                <path d="M33.9414 1.06055L53.5737 20.6928" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
-                <path d="M53.579 49.3048L33.9414 68.9424" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
-                <path d="M48.4413 35.0048L15.0469 35.0044" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
-              </svg></div>
-          </span><span class="display-3xl">Pitch</span><span class="display-3xl">&nbsp;</span>
-          <div class="subhero_heading-underline-wrapper"><span class="display-3xl">Powerfully</span>
-            <div class="subhero_heading-underline" style="width: 100%; transition: width 600ms 200ms; overflow: hidden;"></div>
-          </div>
-          <div class="subhero_heading-arrow is-pitch w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="127" height="49" viewBox="0 0 127 49" fill="none">
-              <path d="M0.000972067 24.2124C14.6612 24.2124 26.9242 34.4774 29.9941 48.2124" stroke="#202124" stroke-width="1.94795" stroke-miterlimit="10"></path>
-              <path d="M0.000972067 24.2124C14.6612 24.2124 26.9242 13.9474 29.9941 0.212402" stroke="#202124" stroke-width="1.94795" stroke-miterlimit="10"></path>
-              <path d="M126.732 24.2124H4.94749" stroke="#202124" stroke-width="1.94795" stroke-miterlimit="10"></path>
-            </svg></div>
-        </div>
-        <div class="max-880px">
-          <div class="display-xs text-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante dolor, aliquam et auctor vitae, dapibus at dui. Integer</div>
-        </div>
+<div class="subhero-container">
+  <div class="subhero_heading">
+    <span class="subhero_heading-icon-wrapper">
+      <div class="subhero_heading-icon w-embed">
+        <svg xmlns="http://www.w3.org/2000/svg" width="68" height="70" viewBox="0 0 68 70" fill="none">
+          <path d="M33.9414 1.06055L53.5737 20.6928" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
+          <path d="M53.579 49.3048L33.9414 68.9424" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
+          <path d="M48.4413 35.0048L15.0469 35.0044" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
+        </svg>
       </div>
+    </span>
 
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const underline = document.querySelector(".subhero_heading-underline");
-        
-          if (!underline) return;
-        
-          // Set the starting state
-          underline.style.width = "0%";
-          underline.style.transition = "none";
-          underline.style.overflow = "hidden";
-        
-          // Force browser to register the 0% width before animating
-          underline.offsetWidth;
-        
-          // Animate to 100% after 0.2s delay
-          requestAnimationFrame(() => {
-            underline.style.transition = "width 600ms ease 200ms";
-            underline.style.width = "100%";
-          });
-        });
-        </script>
-</body>
-</html>
+    <span class="display-3xl">Pitch</span>
+    <span class="display-3xl">&nbsp;</span>
+
+    <div class="subhero_heading-underline-wrapper">
+      <span class="display-3xl">Powerfully</span>
+      <div class="subhero_heading-underline"></div>
+    </div>
+
+    <div class="subhero_heading-arrow is-pitch w-embed">
+      <svg xmlns="http://www.w3.org/2000/svg" width="127" height="49" viewBox="0 0 127 49" fill="none">
+        <path d="M0.000972067 24.2124C14.6612 24.2124 26.9242 34.4774 29.9941 48.2124" stroke="#202124" stroke-width="1.94795" stroke-miterlimit="10"></path>
+        <path d="M0.000972067 24.2124C14.6612 24.2124 26.9242 13.9474 29.9941 0.212402" stroke="#202124" stroke-width="1.94795" stroke-miterlimit="10"></path>
+        <path d="M126.732 24.2124H4.94749" stroke="#202124" stroke-width="1.94795" stroke-miterlimit="10"></path>
+      </svg>
+    </div>
+  </div>
+
+  <div class="max-880px">
+    <div class="display-xs text-weight-normal">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante dolor, aliquam et auctor vitae, dapibus at dui. Integer
+    </div>
+  </div>
+</div>
+
+<script>
+  function animateSubheroUnderline() {
+    const underline = document.querySelector(".subhero_heading-underline");
+
+    if (!underline) return;
+
+    underline.style.width = "0%";
+    underline.style.transition = "none";
+    underline.style.overflow = "hidden";
+
+    underline.offsetWidth;
+
+    requestAnimationFrame(() => {
+      underline.style.transition = "width 600ms ease 200ms";
+      underline.style.width = "100%";
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", animateSubheroUnderline);
+  } else {
+    animateSubheroUnderline();
+  }
+</script>

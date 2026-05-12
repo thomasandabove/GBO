@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomasandabove/GBO@main/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomasandabove/GBO@main/global.css">
 </head>
 <div class="subhero-container">
     <div class="subhero_heading"><span class="subhero_heading-icon-wrapper">
-        <div class="subhero_heading-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="68" height="70" viewBox="0 0 68 70" fill="none">
-            <path d="M33.9414 1.06055L53.5737 20.6928" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
-            <path d="M53.579 49.3048L33.9414 68.9424" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
-            <path d="M48.4413 35.0048L15.0469 35.0044" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
-          </svg></div>
-      </span><span class="display-3xl">Win the </span>
-      <div class="subhero_heading-underline-wrapper"><span class="display-3xl">market</span>
-        <div class="subhero_heading-underline"></div>
-      </div>
-      <div class="subhero_heading-arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="216" height="210" viewBox="0 0 216 210" fill="none">
-          <path d="M10.118 106.036C13.5394 99.4808 20.9815 96.3979 27.8265 98.2373" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
-          <path d="M10.1188 106.036C13.5402 99.4806 11.8214 91.5967 6.40941 87.0119" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
-          <path d="M213.92 119.397C182.382 70.5885 120.347 31.593 91.3697 54.6067C70.5678 71.1277 123.18 102.995 133.098 91.1546C140.128 82.762 91.9128 47.3049 34.1502 80.7205C18.0367 90.0423 13.1199 98.9572 11.6222 103.371" stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
-        </svg></div>
+            <div class="subhero_heading-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="68" height="70"
+                    viewBox="0 0 68 70" fill="none">
+                    <path d="M33.9414 1.06055L53.5737 20.6928" stroke="#202124" stroke-width="3" stroke-miterlimit="10">
+                    </path>
+                    <path d="M53.579 49.3048L33.9414 68.9424" stroke="#202124" stroke-width="3" stroke-miterlimit="10">
+                    </path>
+                    <path d="M48.4413 35.0048L15.0469 35.0044" stroke="#202124" stroke-width="3" stroke-miterlimit="10">
+                    </path>
+                </svg></div>
+        </span><span class="display-3xl">Win the </span>
+        <div class="subhero_heading-underline-wrapper"><span class="display-3xl">market</span>
+            <div class="subhero_heading-underline"></div>
+        </div>
+        <div class="subhero_heading-arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="216" height="210"
+                viewBox="0 0 216 210" fill="none">
+                <path d="M10.118 106.036C13.5394 99.4808 20.9815 96.3979 27.8265 98.2373" stroke="#202124"
+                    stroke-width="3" stroke-miterlimit="10"></path>
+                <path d="M10.1188 106.036C13.5402 99.4806 11.8214 91.5967 6.40941 87.0119" stroke="#202124"
+                    stroke-width="3" stroke-miterlimit="10"></path>
+                <path
+                    d="M213.92 119.397C182.382 70.5885 120.347 31.593 91.3697 54.6067C70.5678 71.1277 123.18 102.995 133.098 91.1546C140.128 82.762 91.9128 47.3049 34.1502 80.7205C18.0367 90.0423 13.1199 98.9572 11.6222 103.371"
+                    stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
+            </svg></div>
     </div>
     <div class="max-880px">
-      <div class="display-xs">Get in the zone — review our Q3 product strategy and revisit the top takeaways from Google Marketing Live (GML) so you’re prepped to take the lead.</div>
+        <div class="display-xs">Get in the zone — review our Q3 product strategy and revisit the top takeaways from
+            Google Marketing Live (GML) so you’re prepped to take the lead.</div>
     </div>
-  </div>
+</div>
+
 <body>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const underline = document.querySelector(".subhero_heading-underline");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const underline = document.querySelector(".subhero_heading-underline");
 
-  if (!underline) return;
+            if (!underline) return;
 
-  // Set the starting state
-  underline.style.width = "0%";
-  underline.style.transition = "none";
-  underline.style.overflow = "hidden";
+            // Set the starting state
+            underline.style.width = "0%";
+            underline.style.transition = "none";
+            underline.style.overflow = "hidden";
 
-  // Force browser to register the 0% width before animating
-  underline.offsetWidth;
+            // Force browser to register the 0% width before animating
+            underline.offsetWidth;
 
-  // Animate to 100% after 0.2s delay
-  requestAnimationFrame(() => {
-    underline.style.transition = "width 600ms ease 200ms";
-    underline.style.width = "100%";
-  });
-});
-</script>
+            // Animate to 100% after 0.2s delay
+            requestAnimationFrame(() => {
+                underline.style.transition = "width 600ms ease 200ms";
+                underline.style.width = "100%";
+            });
+        });
+    </script>
 </body>
-</html>

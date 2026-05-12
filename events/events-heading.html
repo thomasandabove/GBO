@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomasandabove/GBO@main/global.css">
-</head>
-<body>
     <div class="container">
         <div class="subhero-container">
             <div class="subhero_heading">
@@ -43,5 +38,25 @@
                 </a></div>
         </div>
     </div>
-</body>
-</html>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const underline = document.querySelector(".subhero_heading-underline");
+        
+          if (!underline) return;
+        
+          // Set the starting state
+          underline.style.width = "0%";
+          underline.style.transition = "none";
+          underline.style.overflow = "hidden";
+        
+          // Force browser to register the 0% width before animating
+          underline.offsetWidth;
+        
+          // Animate to 100% after 0.2s delay
+          requestAnimationFrame(() => {
+            underline.style.transition = "width 600ms ease 200ms";
+            underline.style.width = "100%";
+          });
+        });
+        </script>
