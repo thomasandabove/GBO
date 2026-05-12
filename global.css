@@ -126,6 +126,14 @@ img {
   display: flex;
 }
 
+.subhero_heading-arrow {
+  width: 13.375rem;
+  height: 13.125rem;
+  display: flex;
+  position: absolute;
+  inset: -8.5rem -9.5rem auto auto;
+}
+
 @media screen and (max-width: 767px) {
   .subhero-container {
     height: auto;

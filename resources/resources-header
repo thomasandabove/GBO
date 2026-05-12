@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomasandabove/GBO@main/global.css?v=8">
+<div class="subhero-container">
+    <div class="subhero_heading">
+        <div class="subhero_heading-underline-wrapper"><span class="display-3xl">Resource</span>
+            <div class="subhero_heading-underline"></div>
+        </div><span class="display-3xl">&nbsp;</span><span class="display-3xl">Kit </span>
+        <div class="subhero_heading-arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="216" height="210"
+                viewBox="0 0 216 210" fill="none">
+                <path d="M10.118 106.036C13.5394 99.4808 20.9815 96.3979 27.8265 98.2373" stroke="#202124"
+                    stroke-width="3" stroke-miterlimit="10"></path>
+                <path d="M10.1188 106.036C13.5402 99.4806 11.8214 91.5967 6.40941 87.0119" stroke="#202124"
+                    stroke-width="3" stroke-miterlimit="10"></path>
+                <path
+                    d="M213.92 119.397C182.382 70.5885 120.347 31.593 91.3697 54.6067C70.5678 71.1277 123.18 102.995 133.098 91.1546C140.128 82.762 91.9128 47.3049 34.1502 80.7205C18.0367 90.0423 13.1199 98.9572 11.6222 103.371"
+                    stroke="#202124" stroke-width="3" stroke-miterlimit="10"></path>
+            </svg></div>
+    </div>
+    <div class="max-880px">
+        <div class="display-xs">Get in the zone — review our Q3 product strategy and revisit the top takeaways from
+            Google Marketing Live (GML) so you’re prepped to take the lead.</div>
+    </div>
+    <div class="subhero-button-wrapper"><a href="#" class="button w-inline-block">
+            <div>Download Resource Kit Deck (10.5MB PDF)</div>
+            <div class="icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                    fill="none">
+                    <path
+                        d="M15.0007 12.5002V15.0002H5.00065V12.5002H3.33398V15.0002C3.33398 15.9168 4.08398 16.6668 5.00065 16.6668H15.0007C15.9173 16.6668 16.6673 15.9168 16.6673 15.0002V12.5002H15.0007ZM14.1673 9.16683L12.9923 7.99183L10.834 10.1418V3.3335H9.16732V10.1418L7.00898 7.99183L5.83398 9.16683L10.0007 13.3335L14.1673 9.16683Z"
+                        fill="white"></path>
+                </svg></div>
+        </a></div>
+</div>
