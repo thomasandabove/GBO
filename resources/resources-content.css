@@ -347,10 +347,6 @@
     .card-3grid {
       grid-template-columns: 1fr 1fr;
     }
-  
-    .banner {
-      grid-template-columns: 1fr;
-    }
   }
   
   @media screen and (max-width: 767px) {
@@ -401,4 +397,8 @@
       justify-content: center;
       width: 100%;
     }
+    
+    .banner {
+        grid-template-columns: 1fr;
+      }
   }
