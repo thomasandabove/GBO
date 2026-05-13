@@ -72,10 +72,6 @@ img {
    LAYOUT HELPERS
 ========================================================= */
 
-.max-880px {
-  max-width: 880px;
-}
-
 .center-wrapper {
   display: flex;
   justify-content: center;
@@ -135,6 +131,10 @@ img {
   margin-top: 3rem;
 }
 
+.subhero-sub-text-wrapper {
+  max-width: 640px;
+}
+
 
 /* =========================================================
    BUTTONS
@@ -148,6 +148,7 @@ img {
   grid-row-gap: 0.625rem;
   padding: 1.25rem 2rem;
   color: #fff;
+  cursor: pointer;
   background-color: #202124;
   border: 1px solid #202124;
   border-radius: 100vw;
@@ -159,6 +160,66 @@ img {
 .button:hover {
   background-color: #4682f4;
   border-color: #4682f4;
+}
+
+.button.primary {
+  color: #fff;
+  background-color: #202124;
+}
+
+.button.icon {
+  justify-content: center;
+  align-items: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  padding: 0;
+  background-color: #202124;
+  transition: background-color 0.4s, transform 0.6s;
+}
+
+.button.secondary {
+  color: #202124;
+  background-color: #fff;
+}
+
+.button.secondary:hover {
+  color: #fff;
+  background-color: #202124;
+}
+
+.button.secondary.hover-blue:hover {
+  background-color: #4682f4;
+}
+
+.button.tertiary {
+  justify-content: flex-start;
+  align-items: center;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  padding: 0;
+  color: #202124;
+  background-color: transparent;
+  border-style: none;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+.button.tertiary:hover {
+  color: #4682f4;
+}
+
+.button.tertiary.is-white {
+  color: #fff;
+}
+
+.button.white {
+  color: #202124;
+  background-color: #fff;
+}
+
+.button.disabled {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .icon {
