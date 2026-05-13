@@ -124,6 +124,12 @@ img {
   height: 13.125rem;
 }
 
+.subhero_heading-arrow.is-pitch {
+  width: 8rem;
+  height: 3rem;
+  top: auto;
+}
+
 .subhero-button-wrapper {
   display: flex;
   grid-column-gap: 1.5rem;
@@ -189,6 +195,7 @@ img {
 
 .button.secondary.hover-blue:hover {
   background-color: #4682f4;
+  border-color: #4682f4;
 }
 
 .button.tertiary {
@@ -247,11 +254,6 @@ img {
 
   .subhero-button-wrapper {
     flex-flow: column;
-    width: 100%;
-  }
-
-  .button {
-    justify-content: center;
     width: 100%;
   }
 }
