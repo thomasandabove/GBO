@@ -155,6 +155,12 @@ img {
   }
 }
 
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 479px) {
   .display-3xl {
     font-size: 42px;
