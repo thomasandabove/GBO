@@ -16,7 +16,6 @@ body {
 }
 
 /* Webflow utility classes used in your HTML */
-
 .w-inline-block {
   max-width: 100%;
   display: inline-block;
@@ -34,7 +33,6 @@ body {
 }
 
 /* Tab wrapper */
-
 .tab {
   flex-flow: column;
   justify-content: flex-start;
@@ -109,7 +107,6 @@ body {
 }
 
 /* Containers */
-
 .container-inner {
   padding: 3rem;
   position: relative;
@@ -134,7 +131,6 @@ body {
 }
 
 /* Product banner */
-
 .product-banner {
   z-index: 2;
   grid-column-gap: 16px;
@@ -183,7 +179,6 @@ body {
 }
 
 /* Typography */
-
 .display-2xl {
   text-align: center;
   font-size: 4.5rem;
@@ -240,17 +235,22 @@ body {
 }
 
 /* Cards */
-
 .card {
   color: #202124;
   background-color: #fff;
   border: 1px solid #dadce0;
   border-radius: 3rem;
   flex-flow: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
+  text-align: left;
   padding: 1.5rem;
   text-decoration: none;
+  display: flex;
+}
+
+/* Higher specificity than global `.w-inline-block` so the card remains `display: flex`. */
+.card.w-inline-block {
   display: flex;
 }
 
@@ -311,7 +311,6 @@ body {
 }
 
 /* Buttons */
-
 .button {
   color: #fff;
   background-color: #202124;
@@ -362,7 +361,6 @@ body {
 }
 
 /* Tags / icons */
-
 .tag {
   grid-column-gap: 8px;
   grid-row-gap: 8px;
@@ -391,7 +389,6 @@ body {
 }
 
 /* Product dropdowns */
-
 .product-dropdown-container {
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
@@ -488,7 +485,6 @@ body {
 }
 
 /* Bottom product section */
-
 .product-bottom-section {
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
@@ -516,10 +512,11 @@ body {
 }
 
 .product-bottom-item {
-  flex-flow: column;
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
+  flex-flow: column;
+  flex: 1 1 0%;
 }
 
 .product-bottom-icon {
@@ -562,4 +559,39 @@ body {
 .product-bottom-divider {
   background-color: #dadce0;
   width: 1px;
+}
+
+/* Yellow for app */
+.card.is-product.is-app .tag {
+  background-color: #fabe04;
+  color: #202124;
+}
+
+/* Red for YouTube */
+.card.is-product.is-youtube .tag {
+  background-color: #ea4336;
+}
+
+/* Green for measurements */
+.card.is-product.is-measurements .tag {
+  background-color: #34a854;
+}
+
+
+.product-dropdown.open .button.icon {
+  transform: rotate(45deg);
+}
+
+/* Green for measurements */
+.card.is-product:hover .button.secondary {
+  background-color: #202124;
+  color: white;
+}
+
+.disable {
+  pointer-events: none;
+}
+
+.hide {
+  display: none !important;
 }
