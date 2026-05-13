@@ -1,0 +1,46 @@
+/* =========================================================
+   HOME CALENDAR TEXT
+========================================================= */
+
+.home-calandar-text-wrapper {
+    text-align: center;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+  }
+  
+  .home-calandar-text {
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 32px;
+    display: flex;
+  }
+  
+  
+  /* =========================================================
+     TYPOGRAPHY
+  ========================================================= */
+  
+  .display-md {
+    font-size: 36px;
+  }
+  
+  .display-md.text-color-white {
+    color: #fff;
+  }
+  
+  .text-size-large {
+    font-size: 18px;
+  }
+  
+  .text-size-large.text-color-white {
+    color: #fff;
+  }
+  
+  .max-width-400px {
+    max-width: 400px;
+  }
