@@ -1,0 +1,238 @@
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.container {
+    width: 100%;
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  /* =========================================================
+     HIDE
+  ========================================================= */
+  
+  .hide {
+    display: none;
+  }
+  
+  
+  /* =========================================================
+     HERO
+  ========================================================= */
+  
+  .hero-container {
+    text-align: center;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .hero-kick-off-gif {
+    margin-bottom: 1rem;
+  }
+  
+  .hero_heading {
+    text-align: center;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    display: flex;
+    position: relative;
+  }
+  
+  .hero_heading-arrow {
+    width: 12rem;
+    height: 5rem;
+    display: flex;
+    position: absolute;
+    inset: auto auto auto -12rem;
+  }
+  
+  .hero-sub-text-wrapper {
+    max-width: 880px;
+  }
+  
+  
+  /* =========================================================
+     TYPOGRAPHY
+  ========================================================= */
+  
+  .display-xs {
+    line-height: 1.5;
+  }
+  
+  
+  /* =========================================================
+     HOME CARDS
+  ========================================================= */
+  
+  .home-card-container {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    position: relative;
+  }
+  
+  .card {
+    color: #202124;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 3rem;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem;
+    text-decoration: none;
+    display: flex;
+  }
+  
+  .card.is-home {
+    background-color: #a7dbb5;
+    border-style: none;
+  }
+  
+  .card.is-home.is-red {
+    background-color: #fde7e5;
+  }
+  
+  .card.is-home.is-blue {
+    background-color: #e7f0fe;
+  }
+  
+  .card.is-disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+  
+  .card.is-disabled .button {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+  }
+  
+  .card-text-wrapper {
+    grid-column-gap: 0.75rem;
+    grid-row-gap: 0.75rem;
+    flex-flow: column;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+  }
+  
+  
+  /* =========================================================
+     HOME CARD ICONS
+  ========================================================= */
+  
+  .home-card-icon {
+    background-color: #34a854;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    display: flex;
+  }
+  
+  .home-card-icon.is-red {
+    background-color: #ea4336;
+  }
+  
+  .home-card-icon.is-blue {
+    background-color: #4682f4;
+  }
+  
+  .home-card-icon-embed {
+    width: 48px;
+    height: 48px;
+  }
+  
+  
+  /* =========================================================
+     HOME TAG
+  ========================================================= */
+  
+  .home-tag {
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    position: absolute;
+    inset: 0% 0% auto auto;
+  }
+  
+  .home-tag_text-wrapper {
+    z-index: 2;
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+    display: flex;
+    position: relative;
+  }
+  
+  .home-time-icon {
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    display: flex;
+  }
+  
+  .home-tag-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  
+  /* =========================================================
+     BUTTON OVERRIDES
+  ========================================================= */
+  
+  .button.disabled {
+    pointer-events: none;
+  }
+  
+  
+  /* =========================================================
+     INLINE STYLE RULES FROM HTML
+  ========================================================= */
+  
+  .card.is-product.is-app .tag {
+    background-color: #fabe04;
+    color: #202124;
+  }
+  
+  .card.is-product.is-youtube .tag {
+    background-color: #ea4336;
+  }
+  
+  .card.is-product.is-measurements .tag {
+    background-color: #34a854;
+  }
+  
+  .product-dropdown.open .button.icon {
+    transform: rotate(45deg);
+  }
+  
+  .card.is-product:hover .button {
+    background-color: #202124;
+    border-color: #202124;
+    color: white;
+  }
