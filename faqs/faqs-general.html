@@ -251,3 +251,53 @@
             </svg></div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const faqItems = document.querySelectorAll('.faq-item');
+  
+      faqItems.forEach((item) => {
+        const trigger = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+  
+        if (!trigger || !answer) return;
+  
+        // Set starting state
+        if (item.classList.contains('open')) {
+          answer.style.height = answer.scrollHeight + 'px';
+  
+          setTimeout(() => {
+            if (item.classList.contains('open')) {
+              answer.style.height = 'auto';
+            }
+          }, 600);
+        } else {
+          answer.style.height = '0px';
+        }
+  
+        trigger.addEventListener('click', function () {
+          const isOpen = item.classList.contains('open');
+  
+          if (isOpen) {
+            // Close
+            answer.style.height = answer.scrollHeight + 'px';
+  
+            requestAnimationFrame(() => {
+              item.classList.remove('open');
+              answer.style.height = '0px';
+            });
+          } else {
+            // Open
+            item.classList.add('open');
+            answer.style.height = answer.scrollHeight + 'px';
+  
+            setTimeout(() => {
+              if (item.classList.contains('open')) {
+                answer.style.height = 'auto';
+              }
+            }, 600);
+          }
+        });
+      });
+    });
+  </script>

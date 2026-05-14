@@ -67,6 +67,18 @@ img {
   font-weight: 400;
 }
 
+.text-size-large {
+  font-size: 18px;
+}
+
+.text-size-large.text-weight-medium {
+  font-weight: 500;
+}
+
+.text-size-large.text-color-white {
+  color: #fff;
+}
+
 
 /* =========================================================
    LAYOUT HELPERS
@@ -76,6 +88,47 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/* =========================================================
+   TEMPLATE HERO
+========================================================= */
+
+.template-hero {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.template-hero-breadcrumbs {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.template-hero-breadcrumbs-icon {
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  display: flex;
+}
+
+.template-hero-breadcrumbs-link {
+  opacity: 0.6;
+  color: #202124;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+.template-hero-breadcrumbs-link:hover {
+  opacity: 1;
 }
 
 
@@ -161,6 +214,7 @@ img {
   transform: rotate(135deg);
 }
 
+
 /* =========================================================
    BUTTONS
 ========================================================= */
@@ -198,13 +252,9 @@ img {
   width: 3.75rem;
   height: 3.75rem;
   padding: 0;
-  background-color: #202124;
-  transition: background-color 0.4s, transform 0.6s;
-}
-
-.button.icon {
   background-color: #4682f4;
   border-color: #4682f4;
+  transition: background-color 0.4s, transform 0.6s;
 }
 
 .button.secondary {
@@ -261,7 +311,11 @@ img {
   width: 20px;
   height: 20px;
 }
-  
+
+
+/* =========================================================
+   CARD ACTIONS
+========================================================= */
 
 .card-actions-row {
   grid-column-gap: .75rem;
