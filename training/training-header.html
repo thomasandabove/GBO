@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="https://gbo.pages.dev/global.css">
+<div class="container">
+    <div class="subhero-container">
+        <div class="subhero_heading">
+            <div class="subhero_heading-underline-wrapper"><span class="display-3xl">Training</span>
+                <div class="subhero_heading-icon is-training w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="68"
+                        height="70" viewBox="0 0 68 70" fill="none">
+                        <path d="M33.9414 1.06055L53.5737 20.6928" stroke="#202124" stroke-width="3"
+                            stroke-miterlimit="10"></path>
+                        <path d="M53.579 49.3048L33.9414 68.9424" stroke="#202124" stroke-width="3"
+                            stroke-miterlimit="10"></path>
+                        <path d="M48.4413 35.0048L15.0469 35.0044" stroke="#202124" stroke-width="3"
+                            stroke-miterlimit="10"></path>
+                    </svg></div>
+                <div class="subhero_heading-underline"></div>
+            </div>
+        </div>
+        <div class="subhero-sub-text-wrapper">
+            <div class="display-xs text-weight-normal">Keep sharpening your sales skills. Complete your Drill Tests by
+                June 30 and look out for new workflow training on July 7.</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function animateSubheroUnderline() {
+      const underline = document.querySelector(".subhero_heading-underline");
+  
+      if (!underline) return;
+  
+      underline.style.width = "0%";
+      underline.style.transition = "none";
+      underline.style.overflow = "hidden";
+  
+      underline.offsetWidth;
+  
+      requestAnimationFrame(() => {
+        underline.style.transition = "width 600ms ease 200ms";
+        underline.style.width = "100%";
+      });
+    }
+  
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", animateSubheroUnderline);
+    } else {
+      animateSubheroUnderline();
+    }
+  </script>

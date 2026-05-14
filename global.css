@@ -153,6 +153,13 @@ img {
   max-width: 640px;
 }
 
+.subhero_heading-icon.is-training {
+  margin-left: 0;
+  margin-right: 0;
+  position: absolute;
+  inset: -2rem -4rem auto auto;
+  transform: rotate(135deg);
+}
 
 /* =========================================================
    BUTTONS
