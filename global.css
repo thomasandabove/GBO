@@ -130,6 +130,14 @@ img {
   top: auto;
 }
 
+.subhero_heading-arrow.is-newsfeed {
+  width: 8rem;
+  height: 3rem;
+  top: auto;
+  left: -9rem;
+  right: auto;
+}
+
 .subhero-button-wrapper {
   display: flex;
   grid-column-gap: 1.5rem;
