@@ -70,6 +70,11 @@
     margin-top: 0;
   }
   
+  .card.disabled {
+    opacity: 0.5 !important;
+    cursor: default;
+    pointer-events: none;
+  }
   
   /* =========================================================
      TRAINING IMAGE / ICONS

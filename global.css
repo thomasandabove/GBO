@@ -243,7 +243,8 @@ img {
 
 .button.disabled {
   opacity: 0.5 !important;
-  cursor: pointer;
+  cursor: default;
+  pointer-events: none;
 }
 
 .icon {
