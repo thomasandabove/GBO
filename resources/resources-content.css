@@ -201,17 +201,12 @@
     background-color: #202124;
   }
   
-  .card-actions {
-    width: 100%;
-  }
-  
   .card-actions-row {
     grid-column-gap: .75rem;
     grid-row-gap: .75rem;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
     display: flex;
   }
   
