@@ -71,7 +71,6 @@
   }
   
   .card.disabled {
-    opacity: 0.5 !important;
     cursor: default;
     pointer-events: none;
   }
