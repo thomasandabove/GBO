@@ -195,6 +195,11 @@ img {
   transition: background-color 0.4s, transform 0.6s;
 }
 
+.button.icon {
+  background-color: #4682f4;
+  border-color: #4682f4;
+}
+
 .button.secondary {
   color: #202124;
   background-color: #fff;
@@ -237,7 +242,7 @@ img {
 }
 
 .button.disabled {
-  opacity: 0.5;
+  opacity: 0.5 !important;
   cursor: pointer;
 }
 
@@ -248,6 +253,7 @@ img {
   width: 20px;
   height: 20px;
 }
+  
 
 
 /* =========================================================
