@@ -102,6 +102,10 @@ img {
   text-align: center;
 }
 
+.subhero_heading.is-resources {
+  height: 520px;
+}
+
 .subhero_heading-underline-wrapper {
   display: inline-block;
   position: relative;

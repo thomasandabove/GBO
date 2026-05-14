@@ -201,6 +201,26 @@
     background-color: #202124;
   }
   
+  .card-actions {
+    width: 100%;
+  }
+  
+  .card-actions-row {
+    grid-column-gap: .75rem;
+    grid-row-gap: .75rem;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    display: flex;
+  }
+  
+  .card-actions-row > .button {
+    flex: 0 0 auto;
+    width: auto;
+    justify-content: center;
+  }
+  
   /* Decorative shapes */
   
   .conatiner-shape-top-right {
@@ -383,6 +403,7 @@
   
     .banner {
       border-radius: 2rem;
+      grid-template-columns: 1fr;
     }
   
     .display-xs {
@@ -397,8 +418,9 @@
       justify-content: center;
       width: 100%;
     }
-    
-    .banner {
-        grid-template-columns: 1fr;
-      }
+  
+    .card-actions-row .button {
+      width: auto;
+      flex: 0 0 auto;
+    }
   }
