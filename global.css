@@ -256,6 +256,21 @@ img {
 }
   
 
+.card-actions-row {
+  grid-column-gap: .75rem;
+  grid-row-gap: .75rem;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.card-actions-row > .button {
+  flex: 0 0 auto;
+  width: auto;
+  justify-content: center;
+}
+
 
 /* =========================================================
    TABLET / MOBILE
