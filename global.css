@@ -1,6 +1,46 @@
 /* =========================================================
    GLOBAL RESET / BASE
 ========================================================= */
+:root {
+  --font-from: 16;
+  --font-to: 16;
+  --vw-from: calc(1728 / 100);
+  --vw-to: calc(2496 / 100);
+  --coefficient: calc((var(--font-to) - var(--font-from)) / (var(--vw-to) - var(--vw-from)));
+  --base: calc((var(--font-from) - var(--vw-from) * var(--coefficient)) / 16);
+}
+
+html {
+  font-size: calc(var(--base) * 1rem + var(--coefficient) * 1vw);
+}
+
+@media screen and (max-width: 1728px) {
+  :root {
+    --font-from: 12;
+    --font-to: 16;
+    --vw-from: calc(960 / 100);
+    --vw-to: calc(1728 / 100);
+    }
+}
+
+@media screen and (max-width: 960px) {
+  :root {
+    --font-from: 14;
+    --font-to: 16;
+    --vw-from: calc(479 / 100);
+    --vw-to: calc(960 / 100);
+    }
+}
+
+@media screen and (max-width: 479px) {
+  :root {
+    --font-from: 12;
+    --font-to: 16;
+    --vw-from: calc(1 / 100);
+    --vw-to: calc(479 / 100);
+    }
+}
+
 
 * {
   box-sizing: border-box;
