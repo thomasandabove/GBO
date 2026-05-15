@@ -1,87 +1,39 @@
-/* =========================================================
-   LAYOUT
-========================================================= */
+/* Feedback review banner — page-specific only */
 
-.container {
-    width: 100%;
-    max-width: 75rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  
-  /* =========================================================
-     REVIEW BANNER
-  ========================================================= */
-  
-  .review-banner {
-    z-index: 2;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    background-color: #fafafa;
-    border-radius: 3rem;
-    grid-template-rows: auto;
-    grid-template-columns: 320px 1fr;
-    grid-auto-columns: 1fr;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem;
-    display: flex;
-    position: relative;
-  }
-  
-  .review-banner-text {
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1.5rem;
-    flex-flow: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 55%;
-    display: flex;
-  }
-  
-  .review-banner-image {
-    justify-content: center;
-    align-items: center;
-    width: 128px;
-    height: 128px;
-    display: flex;
-  }
-  
-  
-  /* =========================================================
-     TEXT
-  ========================================================= */
-  
-  .display-sm {
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 1.2;
-  }
-  
-  .display-sm.text-weight-medium {
-    font-weight: 500;
-  }
-  
-  
-  /* =========================================================
-     BANNER TEXT WRAPPER
-  ========================================================= */
-  
-  .banner-text-wrapper {
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-  
-  
-  /* =========================================================
-     WEBFLOW NODE ID
-  ========================================================= */
-  
-  #w-node-_3bd47344-0657-b81c-ca72-b48180a98d3c-8dce717c {
-    grid-area: span 1 / span 1 / span 1 / span 1;
-  }
+.review-banner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-rows: auto;
+  grid-template-columns: 320px 1fr;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  padding: 3rem;
+  background-color: var(--color-surface-muted);
+  border-radius: var(--radius-card);
+}
+
+.review-banner-text {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 55%;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+}
+
+.review-banner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 128px;
+}
+
+#w-node-_3bd47344-0657-b81c-ca72-b48180a98d3c-8dce717c {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}

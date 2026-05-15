@@ -1,169 +1,36 @@
-/* =========================================================
-   LAYOUT
-========================================================= */
+/* Training section — page-specific only */
 
-.container {
-    width: 100%;
-    max-width: 75rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .container-inner {
-    padding: 3rem;
-    position: relative;
-  }
-  
-  .card-2grid {
-    z-index: 3;
-    grid-column-gap: 28px;
-    grid-row-gap: 28px;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-columns: 1fr;
-    place-items: center;
-    display: grid;
-    position: relative;
-  }
-  
-  
-  /* =========================================================
-     CARDS
-  ========================================================= */
-  
-  .card {
-    color: #202124;
-    text-align: left;
-    background-color: #fff;
-    border: 1px solid #dadce0;
-    border-radius: 3rem;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 1.5rem;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .card.is-training-strat {
-    background-color: #a7dbb5;
-    border-style: none;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  .card.is-training-impact {
-    background-color: #e7f0fe;
-    border-style: none;
-  }
-  
-  .card-text-wrapper {
-    grid-column-gap: .75rem;
-    grid-row-gap: .75rem;
-    flex-flow: column;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    display: flex;
-  }
-  
-  .card-text-wrapper.no-top-margin {
-    margin-top: 0;
-  }
-  
-  .card.disabled {
-    cursor: default;
-    pointer-events: none;
-  }
-  
-  /* =========================================================
-     TRAINING IMAGE / ICONS
-  ========================================================= */
-  
-  .training-img {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 20rem;
-    margin-bottom: 1.5rem;
-    display: flex;
-    position: relative;
-  }
-  
-  .training-tag-wrapper {
-    position: absolute;
-    inset: 0% auto auto 0%;
-  }
-  
-  .code-embed {
-    position: absolute;
-  }
-  
-  
-  /* =========================================================
-     TAGS
-  ========================================================= */
-  
-  .tag {
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-    color: #fff;
-    background-color: #4682f4;
-    border-radius: .5rem;
-    padding: .5rem .75rem;
-    font-size: 14px;
-    display: flex;
-  }
-  
-  .tag.is-green {
-    background-color: #34a854;
-  }
-  
-  
-  /* =========================================================
-     BUTTON OVERRIDES
-  ========================================================= */
-  
-  .button.disabled {
-    pointer-events: none;
-  }
-  
-  
-  /* =========================================================
-     DECORATIVE SHAPES
-  ========================================================= */
-  
-  .conatiner-shape-top-right {
-    z-index: 1;
-    width: 128px;
-    height: 129px;
-    display: flex;
-    position: absolute;
-    inset: 0% 0% auto auto;
-  }
-  
-  .conatiner-shape-bottom-left {
-    z-index: 1;
-    width: 128px;
-    height: 129px;
-    display: flex;
-    position: absolute;
-    inset: auto auto 0% 0%;
-  }
-  
-  .conatiner-arrow-top-left {
-    z-index: 1;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    position: absolute;
-    inset: 0% auto auto 0%;
-  }
-  
-  
-  /* =========================================================
-     WEBFLOW GRID NODE
-  ========================================================= */
-  
-  #w-node-_511e9ed2-4c31-0d1e-f82d-36aa9b1375cd-9439c140 {
-    grid-area: span 1 / span 1 / span 1 / span 1;
-  }
+.card.is-training-strat {
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #a7dbb5;
+  border-style: none;
+}
+
+.card.is-training-impact {
+  background-color: var(--color-surface-blue);
+  border-style: none;
+}
+
+.training-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 1.5rem;
+}
+
+.training-tag-wrapper {
+  position: absolute;
+  inset: 0% auto auto 0%;
+}
+
+.code-embed {
+  position: absolute;
+}
+
+#w-node-_511e9ed2-4c31-0d1e-f82d-36aa9b1375cd-9439c140 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
