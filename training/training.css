@@ -34,3 +34,7 @@
 #w-node-_511e9ed2-4c31-0d1e-f82d-36aa9b1375cd-9439c140 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
+
+.training-inner {
+  width: 50%;
+}
