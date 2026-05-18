@@ -626,7 +626,7 @@ svg:not(:root) {
 .subhero_heading-underline {
   position: absolute;
   z-index: -1;
-  inset: auto 0% 0.75rem;
+  inset: auto 0% 0.25rem;
   width: 100%;
   height: 20px;
   background-color: var(--color-accent);
