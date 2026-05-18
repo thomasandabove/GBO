@@ -1,985 +1,975 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-</head>
-
-<body>
-    <div class="container">
-        <div class="hide w-embed">
-            <style>
-                .card:hover .button.secondary {
-                    background-color: #202124;
-                    color: white;
-                }
-            </style>
-        </div>
-        <div class="event-container">
-            <div class="event-filters">
-                <div class="w-form">
-                    <form id="email-form" name="email-form" data-name="Email Form" method="get"
-                        class="event-filter-form" data-wf-page-id="6a01d42eab663e8d940b9432"
-                        data-wf-element-id="d955e1d8-ac0d-3284-8cb8-0ae3119325ed"
-                        data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e" aria-label="Email Form">
-                        <div>
-                            <div class="text-size-xlarge text-weight-medium">Region:</div>
-                            <div class="event-radio-filter"><label class="radio checked w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input w--redirected-checked">
-                                    </div><input type="radio" data-name="region" id="all" name="region"
-                                        style="opacity:0;position:absolute;z-index:-1" checked="" value="all"><span
-                                        class="radio-button-label w-form-label" for="all">All</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="region" id="AMER" name="region"
-                                        style="opacity:0;position:absolute;z-index:-1" value="AMER"><span
-                                        class="radio-button-label w-form-label" for="AMER">AMER</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" name="region" id="APAC" data-name="region"
-                                        style="opacity:0;position:absolute;z-index:-1" value="APAC"><span
-                                        class="radio-button-label w-form-label" for="APAC">APAC</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="region" id="EMEA" name="region"
-                                        style="opacity:0;position:absolute;z-index:-1" value="EMEA"><span
-                                        class="radio-button-label w-form-label" for="EMEA">EMEA</span>
-                                </label></div>
-                        </div>
-                        <div>
-                            <div class="text-size-xlarge text-weight-medium">Countries</div>
-                            <div class="event-radio-filter"><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" name="countries" id="All-5" data-name="countries"
-                                        style="opacity:0;position:absolute;z-index:-1" value="All"><span
-                                        class="radio-button-label w-form-label" for="All-5">All</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" name="countries" id="UKI" data-name="countries"
-                                        style="opacity:0;position:absolute;z-index:-1" value="UKI"><span
-                                        class="radio-button-label w-form-label" for="UKI">UKI</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="countries" id="NE-filter" name="countries"
-                                        style="opacity:0;position:absolute;z-index:-1" value="NE"><span
-                                        class="radio-button-label w-form-label" for="NE-filter">NE</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="countries" id="SE" name="countries"
-                                        style="opacity:0;position:absolute;z-index:-1" value="SE"><span
-                                        class="radio-button-label w-form-label" for="SE">SE</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="countries" id="CE" name="countries"
-                                        style="opacity:0;position:absolute;z-index:-1" value="CE"><span
-                                        class="radio-button-label w-form-label" for="CE">CE</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" name="countries" id="EEM" data-name="countries"
-                                        style="opacity:0;position:absolute;z-index:-1" value="EEM"><span
-                                        class="radio-button-label w-form-label" for="EEM">EEM</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="countries" id="SEAS" name="countries"
-                                        style="opacity:0;position:absolute;z-index:-1" value="SEAS"><span
-                                        class="radio-button-label w-form-label" for="SEAS">SEAS</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="countries" id="GCKR" name="countries"
-                                        style="opacity:0;position:absolute;z-index:-1" value="GCKR"><span
-                                        class="radio-button-label w-form-label" for="GCKR">GCKR</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="countries" id="AUNZ" name="countries"
-                                        style="opacity:0;position:absolute;z-index:-1" value="AUNZ"><span
-                                        class="radio-button-label w-form-label" for="AUNZ">AUNZ</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="countries" id="IN" name="countries"
-                                        style="opacity:0;position:absolute;z-index:-1" value="IN"><span
-                                        class="radio-button-label w-form-label" for="IN">IN</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="countries" id="JP" name="countries"
-                                        style="opacity:0;position:absolute;z-index:-1" value="JP"><span
-                                        class="radio-button-label w-form-label" for="JP">JP</span>
-                                </label></div>
-                        </div>
-                        <div>
-                            <div class="text-size-xlarge text-weight-medium">Type</div>
-                            <div class="event-radio-filter"><label class="radio checked w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input w--redirected-checked">
-                                    </div><input type="radio" data-name="type" id="all-2" name="type"
-                                        style="opacity:0;position:absolute;z-index:-1" checked="" value="all"><span
-                                        class="radio-button-label w-form-label" for="all-2">All</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="type" id="event" name="type"
-                                        style="opacity:0;position:absolute;z-index:-1" value="event"><span
-                                        class="radio-button-label w-form-label" for="event">Event</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="type" id="Checklist" name="type"
-                                        style="opacity:0;position:absolute;z-index:-1" value="Checklist"><span
-                                        class="radio-button-label w-form-label" for="Checklist">Checklist</span>
-                                </label></div>
-                        </div>
-                        <div>
-                            <div class="text-size-xlarge text-weight-medium">Month</div>
-                            <div class="event-radio-filter"><label class="radio checked w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input w--redirected-checked">
-                                    </div><input type="radio" data-name="month" id="all-4" name="month"
-                                        style="opacity:0;position:absolute;z-index:-1" checked="" value="all"><span
-                                        class="radio-button-label w-form-label" for="all-4">All</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="month" id="June" name="month"
-                                        style="opacity:0;position:absolute;z-index:-1" value="June"><span
-                                        class="radio-button-label w-form-label" for="June">June</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="month" id="July" name="month"
-                                        style="opacity:0;position:absolute;z-index:-1" value="July"><span
-                                        class="radio-button-label w-form-label" for="July">July</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="month" id="August" name="month"
-                                        style="opacity:0;position:absolute;z-index:-1" value="August"><span
-                                        class="radio-button-label w-form-label" for="August">August</span>
-                                </label><label class="radio w-radio">
-                                    <div
-                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                                    </div><input type="radio" data-name="month" id="September" name="month"
-                                        style="opacity:0;position:absolute;z-index:-1" value="September"><span
-                                        class="radio-button-label w-form-label" for="September">September</span>
-                                </label></div>
-                        </div>
-                        <div>
-                            <div><template shadowrootmode="closed"><iframe
-                                        src="https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/jk519/0x4AAAAAAAQTptj2So4dx43e/auto/fbE/auto_expire/normal?lang=auto"
-                                        allow="cross-origin-isolated; fullscreen; autoplay; keyboard-map; gamepad"
-                                        sandbox="allow-same-origin allow-scripts allow-popups" id="cf-chl-widget-jk519"
-                                        tabindex="-1" title="Widget containing a Cloudflare security challenge"
-                                        aria-hidden="true"
-                                        style="border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; overflow: hidden; width: 1px; height: 1px; opacity: 0.01; position: fixed; left: 0px; top: 0px; visibility: visible; pointer-events: none; z-index: -1;"></iframe></template><input
-                                    type="hidden" name="cf-turnstile-response" id="cf-chl-widget-jk519_response"
-                                    value="0.bEHWAfH__DVaYHsJSqzw3n9gssbIvAcMut6ZMM4_i6PxxJ9LquheaidaQdAkNXfaE15xLC9DqpZmId-k48jDH0OPAZVQ5TI7tyONYwsuxq0Rg4s_4v-0AuTB9d88zL2g3sYw8diSAozr85f0DDoB8A0v9XopDlCzmLf7VO46GLD9Of85U4vrsI2C8tOuCYU9gcjTKYEk-c4c7hgmSlclQn5jiaGn2INR-QQ7jhFQwmueMa_5JSPQlbmh-HoN0Gob41HD9Yz2PDybeWP0DEKZnI0ggSheJLfx_EbyihwtQWXkMfwT1JQ4VDES7lwxGya2pXeeO_T49H6gxxbIfR98Jxlzjqu3PF7BgQqvhL9oDggCHKqobXUKyRuEVhqyvRB1qZgKpnQFFQ7Avpv6mh8A_OlZXSOqV81QD9W3bAZEshHMoSLmvrj_ZyaicYXuX5cF_znA_jxP3iH2HBUmROV2rWaKZR7bK45PI8VIwZqQURXrQhwwM6rqyWrIC4RQsEG2h9Ux-DPnJWHPX_utAd1L3NANdWLeLhMFj9nPe-uUm40bvE_xh36bxsC3qLOBOm3ALEoudEzIE8Y1ovECyCgZSB9FJl1IKv_EcGhPKvQcY1NtJqrZ2eAAbGiZrAuXaNVfFKQBfIEs3NvwjCijku1vSqw1JZc0YpG0t9pbx3SXZaln66a51AhIFhIeAqiJaCkC-5PFkQz5AiDq0fgzMVPyM2ztvMqD9uucc4UNodztmM_4co4OoDWRYfwYUCR2kdjWPUGqed7JZyDDJZVhOyK9vK6eWVX8lUSCQF4kdI0DAlZSHknaR1WOoDY5vdOoQqKAmb32SYhXUnCnmrcvbsf-Jvv6gNhaGuYDvs2VwVC1y80kiQE3FIcPAMb_3DQuDtiiWc_xqpeBmXtb6CU_ogkFmyiuTebpmroRB-Ps-TPsCMWeDJPWmGaFYTnCu4eTxrnC_cNV5VEvsNGsEisB5H5d1g.rcbP7Mr-s0GRAQs-QzGToA.d4ebeeb47d8584c520c37a175defa8c69b03b513e0ef122700e970121a16f750">
-                            </div>
-                        </div>
-                    </form>
-                    <div class="hide w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
-                        <div>Thank you! Your submission has been received!</div>
+<link rel="stylesheet" href="https://gbo.pages.dev/global.css"> 
+<link rel="stylesheet" href="https://gbo.pages.dev/events/events.css">
+<div class="container">
+    <div class="hide w-embed">
+        <style>
+            .card:hover .button.secondary {
+                background-color: #202124;
+                color: white;
+            }
+        </style>
+    </div>
+    <div class="event-container">
+        <div class="event-filters">
+            <div class="w-form">
+                <form id="email-form" name="email-form" data-name="Email Form" method="get" class="event-filter-form"
+                    data-wf-page-id="6a01d42eab663e8d940b9432" data-wf-element-id="d955e1d8-ac0d-3284-8cb8-0ae3119325ed"
+                    data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e" aria-label="Email Form">
+                    <div>
+                        <div class="text-size-xlarge text-weight-medium">Region:</div>
+                        <div class="event-radio-filter"><label class="radio checked w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input w--redirected-checked">
+                                </div><input type="radio" data-name="region" id="all" name="region"
+                                    style="opacity:0;position:absolute;z-index:-1" checked="" value="all"><span
+                                    class="radio-button-label w-form-label" for="all">All</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="region" id="AMER" name="region"
+                                    style="opacity:0;position:absolute;z-index:-1" value="AMER"><span
+                                    class="radio-button-label w-form-label" for="AMER">AMER</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" name="region" id="APAC" data-name="region"
+                                    style="opacity:0;position:absolute;z-index:-1" value="APAC"><span
+                                    class="radio-button-label w-form-label" for="APAC">APAC</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="region" id="EMEA" name="region"
+                                    style="opacity:0;position:absolute;z-index:-1" value="EMEA"><span
+                                    class="radio-button-label w-form-label" for="EMEA">EMEA</span>
+                            </label></div>
                     </div>
-                    <div class="hide w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
-                        <div>Oops! Something went wrong while submitting the form.</div>
+                    <div>
+                        <div class="text-size-xlarge text-weight-medium">Countries</div>
+                        <div class="event-radio-filter"><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" name="countries" id="All-5" data-name="countries"
+                                    style="opacity:0;position:absolute;z-index:-1" value="All"><span
+                                    class="radio-button-label w-form-label" for="All-5">All</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" name="countries" id="UKI" data-name="countries"
+                                    style="opacity:0;position:absolute;z-index:-1" value="UKI"><span
+                                    class="radio-button-label w-form-label" for="UKI">UKI</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="countries" id="NE-filter" name="countries"
+                                    style="opacity:0;position:absolute;z-index:-1" value="NE"><span
+                                    class="radio-button-label w-form-label" for="NE-filter">NE</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="countries" id="SE" name="countries"
+                                    style="opacity:0;position:absolute;z-index:-1" value="SE"><span
+                                    class="radio-button-label w-form-label" for="SE">SE</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="countries" id="CE" name="countries"
+                                    style="opacity:0;position:absolute;z-index:-1" value="CE"><span
+                                    class="radio-button-label w-form-label" for="CE">CE</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" name="countries" id="EEM" data-name="countries"
+                                    style="opacity:0;position:absolute;z-index:-1" value="EEM"><span
+                                    class="radio-button-label w-form-label" for="EEM">EEM</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="countries" id="SEAS" name="countries"
+                                    style="opacity:0;position:absolute;z-index:-1" value="SEAS"><span
+                                    class="radio-button-label w-form-label" for="SEAS">SEAS</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="countries" id="GCKR" name="countries"
+                                    style="opacity:0;position:absolute;z-index:-1" value="GCKR"><span
+                                    class="radio-button-label w-form-label" for="GCKR">GCKR</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="countries" id="AUNZ" name="countries"
+                                    style="opacity:0;position:absolute;z-index:-1" value="AUNZ"><span
+                                    class="radio-button-label w-form-label" for="AUNZ">AUNZ</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="countries" id="IN" name="countries"
+                                    style="opacity:0;position:absolute;z-index:-1" value="IN"><span
+                                    class="radio-button-label w-form-label" for="IN">IN</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="countries" id="JP" name="countries"
+                                    style="opacity:0;position:absolute;z-index:-1" value="JP"><span
+                                    class="radio-button-label w-form-label" for="JP">JP</span>
+                            </label></div>
                     </div>
+                    <div>
+                        <div class="text-size-xlarge text-weight-medium">Type</div>
+                        <div class="event-radio-filter"><label class="radio checked w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input w--redirected-checked">
+                                </div><input type="radio" data-name="type" id="all-2" name="type"
+                                    style="opacity:0;position:absolute;z-index:-1" checked="" value="all"><span
+                                    class="radio-button-label w-form-label" for="all-2">All</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="type" id="event" name="type"
+                                    style="opacity:0;position:absolute;z-index:-1" value="event"><span
+                                    class="radio-button-label w-form-label" for="event">Event</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="type" id="Checklist" name="type"
+                                    style="opacity:0;position:absolute;z-index:-1" value="Checklist"><span
+                                    class="radio-button-label w-form-label" for="Checklist">Checklist</span>
+                            </label></div>
+                    </div>
+                    <div>
+                        <div class="text-size-xlarge text-weight-medium">Month</div>
+                        <div class="event-radio-filter"><label class="radio checked w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input w--redirected-checked">
+                                </div><input type="radio" data-name="month" id="all-4" name="month"
+                                    style="opacity:0;position:absolute;z-index:-1" checked="" value="all"><span
+                                    class="radio-button-label w-form-label" for="all-4">All</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="month" id="June" name="month"
+                                    style="opacity:0;position:absolute;z-index:-1" value="June"><span
+                                    class="radio-button-label w-form-label" for="June">June</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="month" id="July" name="month"
+                                    style="opacity:0;position:absolute;z-index:-1" value="July"><span
+                                    class="radio-button-label w-form-label" for="July">July</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="month" id="August" name="month"
+                                    style="opacity:0;position:absolute;z-index:-1" value="August"><span
+                                    class="radio-button-label w-form-label" for="August">August</span>
+                            </label><label class="radio w-radio">
+                                <div
+                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
+                                </div><input type="radio" data-name="month" id="September" name="month"
+                                    style="opacity:0;position:absolute;z-index:-1" value="September"><span
+                                    class="radio-button-label w-form-label" for="September">September</span>
+                            </label></div>
+                    </div>
+                    <div>
+                        <div><template shadowrootmode="closed"><iframe
+                                    src="https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/jk519/0x4AAAAAAAQTptj2So4dx43e/auto/fbE/auto_expire/normal?lang=auto"
+                                    allow="cross-origin-isolated; fullscreen; autoplay; keyboard-map; gamepad"
+                                    sandbox="allow-same-origin allow-scripts allow-popups" id="cf-chl-widget-jk519"
+                                    tabindex="-1" title="Widget containing a Cloudflare security challenge"
+                                    aria-hidden="true"
+                                    style="border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; overflow: hidden; width: 1px; height: 1px; opacity: 0.01; position: fixed; left: 0px; top: 0px; visibility: visible; pointer-events: none; z-index: -1;"></iframe></template><input
+                                type="hidden" name="cf-turnstile-response" id="cf-chl-widget-jk519_response"
+                                value="0.bEHWAfH__DVaYHsJSqzw3n9gssbIvAcMut6ZMM4_i6PxxJ9LquheaidaQdAkNXfaE15xLC9DqpZmId-k48jDH0OPAZVQ5TI7tyONYwsuxq0Rg4s_4v-0AuTB9d88zL2g3sYw8diSAozr85f0DDoB8A0v9XopDlCzmLf7VO46GLD9Of85U4vrsI2C8tOuCYU9gcjTKYEk-c4c7hgmSlclQn5jiaGn2INR-QQ7jhFQwmueMa_5JSPQlbmh-HoN0Gob41HD9Yz2PDybeWP0DEKZnI0ggSheJLfx_EbyihwtQWXkMfwT1JQ4VDES7lwxGya2pXeeO_T49H6gxxbIfR98Jxlzjqu3PF7BgQqvhL9oDggCHKqobXUKyRuEVhqyvRB1qZgKpnQFFQ7Avpv6mh8A_OlZXSOqV81QD9W3bAZEshHMoSLmvrj_ZyaicYXuX5cF_znA_jxP3iH2HBUmROV2rWaKZR7bK45PI8VIwZqQURXrQhwwM6rqyWrIC4RQsEG2h9Ux-DPnJWHPX_utAd1L3NANdWLeLhMFj9nPe-uUm40bvE_xh36bxsC3qLOBOm3ALEoudEzIE8Y1ovECyCgZSB9FJl1IKv_EcGhPKvQcY1NtJqrZ2eAAbGiZrAuXaNVfFKQBfIEs3NvwjCijku1vSqw1JZc0YpG0t9pbx3SXZaln66a51AhIFhIeAqiJaCkC-5PFkQz5AiDq0fgzMVPyM2ztvMqD9uucc4UNodztmM_4co4OoDWRYfwYUCR2kdjWPUGqed7JZyDDJZVhOyK9vK6eWVX8lUSCQF4kdI0DAlZSHknaR1WOoDY5vdOoQqKAmb32SYhXUnCnmrcvbsf-Jvv6gNhaGuYDvs2VwVC1y80kiQE3FIcPAMb_3DQuDtiiWc_xqpeBmXtb6CU_ogkFmyiuTebpmroRB-Ps-TPsCMWeDJPWmGaFYTnCu4eTxrnC_cNV5VEvsNGsEisB5H5d1g.rcbP7Mr-s0GRAQs-QzGToA.d4ebeeb47d8584c520c37a175defa8c69b03b513e0ef122700e970121a16f750">
+                        </div>
+                    </div>
+                </form>
+                <div class="hide w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
+                    <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="hide w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
+                    <div>Oops! Something went wrong while submitting the form.</div>
                 </div>
             </div>
-            <div class="event-collection-wrapper">
-                <div class="event-collection">
-                    <div id="w-node-_10a1d42b-f5dd-3967-8b21-abd94dfd50da-940b9432" class="empty"
-                        style="display: none;">
-                        <div>No Results</div>
-                    </div><a data-date="22 Jun - 26 Jun" data-region="AMER" data-country="UKI" data-type="Event"
-                        data-month="June" id="w-node-_29b320d2-049d-2d03-9460-224188bc401a-940b9432" href="#"
-                        class="card w-inline-block" style="">
-                        <div>
-                            <div class="card-tag-wrapper">
-                                <div class="tag type-event">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1269" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1269)">
-                                                <path
-                                                    d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Event</div>
-                                </div>
-                                <div class="tag type-checklist" style="display: none;">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4417_52807" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4417_52807)">
-                                                <path
-                                                    d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Checklist</div>
-                                </div>
-                                <div class="tag date">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1307" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1307)">
-                                                <path
-                                                    d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>22 Jun - 26 Jun</div>
-                                </div>
-                                <div class="tag region">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1369" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1369)">
-                                                <path
-                                                    d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>AMER</div>
-                                </div>
+        </div>
+        <div class="event-collection-wrapper">
+            <div class="event-collection">
+                <div id="w-node-_10a1d42b-f5dd-3967-8b21-abd94dfd50da-940b9432" class="empty" style="display: none;">
+                    <div>No Results</div>
+                </div><a data-date="22 Jun - 26 Jun" data-region="AMER" data-country="UKI" data-type="Event"
+                    data-month="June" id="w-node-_29b320d2-049d-2d03-9460-224188bc401a-940b9432" href="#"
+                    class="card w-inline-block" style="">
+                    <div>
+                        <div class="card-tag-wrapper">
+                            <div class="tag type-event">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1269" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1269)">
+                                            <path
+                                                d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Event</div>
                             </div>
-                            <div class="card-text-wrapper">
-                                <div class="display-xs">Lorem ipsum dolor amet</div>
-                                <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
-                                    vivamus urna egt lobortis nec volutpat.</div>
+                            <div class="tag type-checklist" style="display: none;">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4417_52807" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4417_52807)">
+                                            <path
+                                                d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Checklist</div>
+                            </div>
+                            <div class="tag date">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1307" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1307)">
+                                            <path
+                                                d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>22 Jun - 26 Jun</div>
+                            </div>
+                            <div class="tag region">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1369" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1369)">
+                                            <path
+                                                d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>AMER</div>
                             </div>
                         </div>
-                        <div class="button secondary">
-                            <div>Learn more</div>
+                        <div class="card-text-wrapper">
+                            <div class="display-xs">Lorem ipsum dolor amet</div>
+                            <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
+                                vivamus urna egt lobortis nec volutpat.</div>
                         </div>
-                    </a><a data-date="22 Jun - 26 Jun" data-region="Global" data-country="NE" data-type="Checklist"
-                        data-month="July" id="w-node-_22f5efff-bd72-1233-a2f9-56fa902950e4-940b9432" href="#"
-                        class="card w-inline-block" style="">
-                        <div>
-                            <div class="card-tag-wrapper">
-                                <div class="tag type-event" style="display: none;">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1269" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1269)">
-                                                <path
-                                                    d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Event</div>
-                                </div>
-                                <div class="tag type-checklist">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4417_52807" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4417_52807)">
-                                                <path
-                                                    d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Checklist</div>
-                                </div>
-                                <div class="tag date">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1307" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1307)">
-                                                <path
-                                                    d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>22 Jun - 26 Jun</div>
-                                </div>
-                                <div class="tag region">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1369" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1369)">
-                                                <path
-                                                    d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Global</div>
-                                </div>
+                    </div>
+                    <div class="button secondary">
+                        <div>Learn more</div>
+                    </div>
+                </a><a data-date="22 Jun - 26 Jun" data-region="Global" data-country="NE" data-type="Checklist"
+                    data-month="July" id="w-node-_22f5efff-bd72-1233-a2f9-56fa902950e4-940b9432" href="#"
+                    class="card w-inline-block" style="">
+                    <div>
+                        <div class="card-tag-wrapper">
+                            <div class="tag type-event" style="display: none;">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1269" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1269)">
+                                            <path
+                                                d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Event</div>
                             </div>
-                            <div class="card-text-wrapper">
-                                <div class="display-xs">Lorem ipsum dolor amet</div>
-                                <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
-                                    vivamus urna egt lobortis nec volutpat.</div>
+                            <div class="tag type-checklist">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4417_52807" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4417_52807)">
+                                            <path
+                                                d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Checklist</div>
                             </div>
-                        </div>
-                        <div class="button secondary">
-                            <div>Learn more</div>
-                        </div>
-                    </a><a data-date="22 Jun - 26 Jun" data-region="EMEA" data-country="CE" data-type="Event"
-                        data-month="August" id="w-node-_646127d3-f535-3a9a-70f0-c3b83b771a8e-940b9432" href="#"
-                        class="card w-inline-block" style="">
-                        <div>
-                            <div class="card-tag-wrapper">
-                                <div class="tag type-event">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1269" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1269)">
-                                                <path
-                                                    d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Event</div>
-                                </div>
-                                <div class="tag type-checklist" style="display: none;">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4417_52807" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4417_52807)">
-                                                <path
-                                                    d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Checklist</div>
-                                </div>
-                                <div class="tag date">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1307" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1307)">
-                                                <path
-                                                    d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>22 Jun - 26 Jun</div>
-                                </div>
-                                <div class="tag region">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1369" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1369)">
-                                                <path
-                                                    d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>EMEA</div>
-                                </div>
+                            <div class="tag date">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1307" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1307)">
+                                            <path
+                                                d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>22 Jun - 26 Jun</div>
                             </div>
-                            <div class="card-text-wrapper">
-                                <div class="display-xs">Lorem ipsum dolor amet</div>
-                                <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
-                                    vivamus urna egt lobortis nec volutpat.</div>
+                            <div class="tag region">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1369" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1369)">
+                                            <path
+                                                d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Global</div>
                             </div>
                         </div>
-                        <div class="button secondary">
-                            <div>Learn more</div>
+                        <div class="card-text-wrapper">
+                            <div class="display-xs">Lorem ipsum dolor amet</div>
+                            <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
+                                vivamus urna egt lobortis nec volutpat.</div>
                         </div>
-                    </a><a data-date="" data-region="Global" data-country="EEM" data-type="Checklist"
-                        data-month="September" id="w-node-_45b136a8-84e9-0597-bd26-8a2e445091e1-940b9432" href="#"
-                        class="card w-inline-block" style="">
-                        <div>
-                            <div class="card-tag-wrapper">
-                                <div class="tag type-event" style="display: none;">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1269" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1269)">
-                                                <path
-                                                    d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Event</div>
-                                </div>
-                                <div class="tag type-checklist">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4417_52807" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4417_52807)">
-                                                <path
-                                                    d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Checklist</div>
-                                </div>
-                                <div class="tag date" style="display: none;">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1307" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1307)">
-                                                <path
-                                                    d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Date</div>
-                                </div>
-                                <div class="tag region">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1369" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1369)">
-                                                <path
-                                                    d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Global</div>
-                                </div>
+                    </div>
+                    <div class="button secondary">
+                        <div>Learn more</div>
+                    </div>
+                </a><a data-date="22 Jun - 26 Jun" data-region="EMEA" data-country="CE" data-type="Event"
+                    data-month="August" id="w-node-_646127d3-f535-3a9a-70f0-c3b83b771a8e-940b9432" href="#"
+                    class="card w-inline-block" style="">
+                    <div>
+                        <div class="card-tag-wrapper">
+                            <div class="tag type-event">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1269" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1269)">
+                                            <path
+                                                d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Event</div>
                             </div>
-                            <div class="card-text-wrapper">
-                                <div class="display-xs">Lorem ipsum dolor amet</div>
-                                <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
-                                    vivamus urna egt lobortis nec volutpat.</div>
+                            <div class="tag type-checklist" style="display: none;">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4417_52807" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4417_52807)">
+                                            <path
+                                                d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Checklist</div>
                             </div>
-                        </div>
-                        <div class="button secondary">
-                            <div>Learn more</div>
-                        </div>
-                    </a><a data-date="22 Jun - 26 Jun" data-region="Global" data-country="EEM" data-type="Event"
-                        data-month="June" id="w-node-_2aea0932-f0ad-c480-55c1-b0b688a1888f-940b9432" href="#"
-                        class="card w-inline-block" style="">
-                        <div>
-                            <div class="card-tag-wrapper">
-                                <div class="tag type-event">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1269" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1269)">
-                                                <path
-                                                    d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Event</div>
-                                </div>
-                                <div class="tag type-checklist" style="display: none;">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4417_52807" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4417_52807)">
-                                                <path
-                                                    d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Checklist</div>
-                                </div>
-                                <div class="tag date">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1307" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1307)">
-                                                <path
-                                                    d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>22 Jun - 26 Jun</div>
-                                </div>
-                                <div class="tag region">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1369" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1369)">
-                                                <path
-                                                    d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Global</div>
-                                </div>
+                            <div class="tag date">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1307" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1307)">
+                                            <path
+                                                d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>22 Jun - 26 Jun</div>
                             </div>
-                            <div class="card-text-wrapper">
-                                <div class="display-xs">Lorem ipsum dolor amet</div>
-                                <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
-                                    vivamus urna egt lobortis nec volutpat.</div>
+                            <div class="tag region">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1369" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1369)">
+                                            <path
+                                                d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>EMEA</div>
                             </div>
                         </div>
-                        <div class="button secondary">
-                            <div>Learn more</div>
+                        <div class="card-text-wrapper">
+                            <div class="display-xs">Lorem ipsum dolor amet</div>
+                            <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
+                                vivamus urna egt lobortis nec volutpat.</div>
                         </div>
-                    </a><a data-date="22 Jun - 26 Jun" data-region="Global" data-country="SEAS" data-type="Checklist"
-                        data-month="July" id="w-node-_392fdbbb-b3aa-746a-df19-63e429f2f48d-940b9432" href="#"
-                        class="card w-inline-block" style="">
-                        <div>
-                            <div class="card-tag-wrapper">
-                                <div class="tag type-event" style="display: none;">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1269" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1269)">
-                                                <path
-                                                    d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Event</div>
-                                </div>
-                                <div class="tag type-checklist">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4417_52807" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4417_52807)">
-                                                <path
-                                                    d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Checklist</div>
-                                </div>
-                                <div class="tag date">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1307" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1307)">
-                                                <path
-                                                    d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>22 Jun - 26 Jun</div>
-                                </div>
-                                <div class="tag region">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1369" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1369)">
-                                                <path
-                                                    d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Global</div>
-                                </div>
+                    </div>
+                    <div class="button secondary">
+                        <div>Learn more</div>
+                    </div>
+                </a><a data-date="" data-region="Global" data-country="EEM" data-type="Checklist" data-month="September"
+                    id="w-node-_45b136a8-84e9-0597-bd26-8a2e445091e1-940b9432" href="#" class="card w-inline-block"
+                    style="">
+                    <div>
+                        <div class="card-tag-wrapper">
+                            <div class="tag type-event" style="display: none;">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1269" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1269)">
+                                            <path
+                                                d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Event</div>
                             </div>
-                            <div class="card-text-wrapper">
-                                <div class="display-xs">Lorem ipsum dolor amet</div>
-                                <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
-                                    vivamus urna egt lobortis nec volutpat.</div>
+                            <div class="tag type-checklist">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4417_52807" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4417_52807)">
+                                            <path
+                                                d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Checklist</div>
                             </div>
-                        </div>
-                        <div class="button secondary">
-                            <div>Learn more</div>
-                        </div>
-                    </a><a data-date="22 Jun - 26 Jun" data-region="Global" data-country="SEAS" data-type="Checklist"
-                        data-month="July" id="w-node-b203435f-d90b-611d-c805-61db6cb637bf-940b9432" href="#"
-                        class="card w-inline-block" style="display: none;">
-                        <div>
-                            <div class="card-tag-wrapper">
-                                <div class="tag type-event" style="display: none;">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1269" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1269)">
-                                                <path
-                                                    d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Event</div>
-                                </div>
-                                <div class="tag type-checklist">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4417_52807" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4417_52807)">
-                                                <path
-                                                    d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Checklist</div>
-                                </div>
-                                <div class="tag date">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1307" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1307)">
-                                                <path
-                                                    d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>22 Jun - 26 Jun</div>
-                                </div>
-                                <div class="tag region">
-                                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none">
-                                            <mask id="mask0_4337_1369" style="mask-type:alpha"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
-                                            </mask>
-                                            <g mask="url(#mask0_4337_1369)">
-                                                <path
-                                                    d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
-                                                    fill="white"></path>
-                                            </g>
-                                        </svg></div>
-                                    <div>Global</div>
-                                </div>
+                            <div class="tag date" style="display: none;">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1307" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1307)">
+                                            <path
+                                                d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Date</div>
                             </div>
-                            <div class="card-text-wrapper">
-                                <div class="display-xs">Lorem ipsum dolor amet</div>
-                                <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
-                                    vivamus urna egt lobortis nec volutpat.</div>
+                            <div class="tag region">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1369" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1369)">
+                                            <path
+                                                d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Global</div>
                             </div>
                         </div>
-                        <div class="button secondary">
-                            <div>Learn more</div>
+                        <div class="card-text-wrapper">
+                            <div class="display-xs">Lorem ipsum dolor amet</div>
+                            <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
+                                vivamus urna egt lobortis nec volutpat.</div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="button secondary">
+                        <div>Learn more</div>
+                    </div>
+                </a><a data-date="22 Jun - 26 Jun" data-region="Global" data-country="EEM" data-type="Event"
+                    data-month="June" id="w-node-_2aea0932-f0ad-c480-55c1-b0b688a1888f-940b9432" href="#"
+                    class="card w-inline-block" style="">
+                    <div>
+                        <div class="card-tag-wrapper">
+                            <div class="tag type-event">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1269" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1269)">
+                                            <path
+                                                d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Event</div>
+                            </div>
+                            <div class="tag type-checklist" style="display: none;">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4417_52807" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4417_52807)">
+                                            <path
+                                                d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Checklist</div>
+                            </div>
+                            <div class="tag date">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1307" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1307)">
+                                            <path
+                                                d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>22 Jun - 26 Jun</div>
+                            </div>
+                            <div class="tag region">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1369" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1369)">
+                                            <path
+                                                d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Global</div>
+                            </div>
+                        </div>
+                        <div class="card-text-wrapper">
+                            <div class="display-xs">Lorem ipsum dolor amet</div>
+                            <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
+                                vivamus urna egt lobortis nec volutpat.</div>
+                        </div>
+                    </div>
+                    <div class="button secondary">
+                        <div>Learn more</div>
+                    </div>
+                </a><a data-date="22 Jun - 26 Jun" data-region="Global" data-country="SEAS" data-type="Checklist"
+                    data-month="July" id="w-node-_392fdbbb-b3aa-746a-df19-63e429f2f48d-940b9432" href="#"
+                    class="card w-inline-block" style="">
+                    <div>
+                        <div class="card-tag-wrapper">
+                            <div class="tag type-event" style="display: none;">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1269" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1269)">
+                                            <path
+                                                d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Event</div>
+                            </div>
+                            <div class="tag type-checklist">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4417_52807" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4417_52807)">
+                                            <path
+                                                d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Checklist</div>
+                            </div>
+                            <div class="tag date">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1307" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1307)">
+                                            <path
+                                                d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>22 Jun - 26 Jun</div>
+                            </div>
+                            <div class="tag region">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1369" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1369)">
+                                            <path
+                                                d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Global</div>
+                            </div>
+                        </div>
+                        <div class="card-text-wrapper">
+                            <div class="display-xs">Lorem ipsum dolor amet</div>
+                            <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
+                                vivamus urna egt lobortis nec volutpat.</div>
+                        </div>
+                    </div>
+                    <div class="button secondary">
+                        <div>Learn more</div>
+                    </div>
+                </a><a data-date="22 Jun - 26 Jun" data-region="Global" data-country="SEAS" data-type="Checklist"
+                    data-month="July" id="w-node-b203435f-d90b-611d-c805-61db6cb637bf-940b9432" href="#"
+                    class="card w-inline-block" style="display: none;">
+                    <div>
+                        <div class="card-tag-wrapper">
+                            <div class="tag type-event" style="display: none;">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1269" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1269)">
+                                            <path
+                                                d="M12.5 10.3525L13.8142 11.6667V12.5H10.4167V16.6667L10 17.0833L9.58335 16.6667V12.5H6.18585V11.6667L7.50002 10.3525V4.16667H6.66669V3.33333H13.3334V4.16667H12.5V10.3525ZM7.37502 11.6667H12.625L11.6667 10.7083V4.16667H8.33335V10.7083L7.37502 11.6667Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Event</div>
+                            </div>
+                            <div class="tag type-checklist">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4417_52807" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4417_52807)">
+                                            <path
+                                                d="M4.86542 14.9198L2.5 12.5546L3.07375 11.9808L4.84458 13.7517L8.38625 10.21L8.96 10.8046L4.86542 14.9198ZM4.86542 8.89418L2.5 6.52876L3.07375 5.95522L4.84458 7.72605L8.38625 4.18439L8.96 4.77876L4.86542 8.89418ZM10.8494 13.4296V12.5963H17.516V13.4296H10.8494ZM10.8494 7.40376V6.57043H17.516V7.40376H10.8494Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Checklist</div>
+                            </div>
+                            <div class="tag date">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1307" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1307)">
+                                            <path
+                                                d="M11.1571 14.484C10.813 14.1399 10.641 13.7243 10.641 13.2371C10.641 12.75 10.813 12.3344 11.1571 11.9904C11.5011 11.6464 11.9166 11.4744 12.4037 11.4744C12.891 11.4744 13.3066 11.6464 13.6506 11.9904C13.9946 12.3344 14.1666 12.75 14.1666 13.2371C14.1666 13.7243 13.9946 14.1399 13.6506 14.484C13.3066 14.828 12.891 15 12.4037 15C11.9166 15 11.5011 14.828 11.1571 14.484ZM4.67956 17.5C4.29595 17.5 3.97567 17.3715 3.71873 17.1146C3.46179 16.8576 3.33331 16.5374 3.33331 16.1538V5.51292C3.33331 5.12931 3.46179 4.80903 3.71873 4.55208C3.97567 4.29514 4.29595 4.16667 4.67956 4.16667H6.15373V2.30771H7.05123V4.16667H13.0129V2.30771H13.8462V4.16667H15.3204C15.704 4.16667 16.0243 4.29514 16.2812 4.55208C16.5382 4.80903 16.6666 5.12931 16.6666 5.51292V16.1538C16.6666 16.5374 16.5382 16.8576 16.2812 17.1146C16.0243 17.3715 15.704 17.5 15.3204 17.5H4.67956ZM4.67956 16.6667H15.3204C15.4487 16.6667 15.5663 16.6133 15.6731 16.5065C15.7799 16.3997 15.8333 16.2821 15.8333 16.1538V8.84625H4.16665V16.1538C4.16665 16.2821 4.22005 16.3997 4.32685 16.5065C4.43366 16.6133 4.55123 16.6667 4.67956 16.6667ZM4.16665 8.01271H15.8333V5.51292C15.8333 5.38458 15.7799 5.26701 15.6731 5.16021C15.5663 5.0534 15.4487 5 15.3204 5H4.67956C4.55123 5 4.43366 5.0534 4.32685 5.16021C4.22005 5.26701 4.16665 5.38458 4.16665 5.51292V8.01271Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>22 Jun - 26 Jun</div>
+                            </div>
+                            <div class="tag region">
+                                <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <mask id="mask0_4337_1369" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="20" height="20">
+                                            <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_4337_1369)">
+                                            <path
+                                                d="M7.08333 16.9079C6.17097 16.5131 5.37639 15.9772 4.69958 15.3004C4.02278 14.6236 3.48694 13.829 3.09208 12.9167C2.69736 12.0043 2.5 11.0312 2.5 9.9975C2.5 8.96389 2.69736 7.99167 3.09208 7.08083C3.48694 6.17014 4.02278 5.37639 4.69958 4.69958C5.37639 4.02278 6.17097 3.48694 7.08333 3.09208C7.99569 2.69736 8.96875 2.5 10.0025 2.5C11.0361 2.5 12.0083 2.69736 12.9192 3.09208C13.8299 3.48694 14.6236 4.02278 15.3004 4.69958C15.9772 5.37639 16.5131 6.17014 16.9079 7.08083C17.3026 7.99167 17.5 8.96389 17.5 9.9975C17.5 11.0312 17.3026 12.0043 16.9079 12.9167C16.5131 13.829 15.9772 14.6236 15.3004 15.3004C14.6236 15.9772 13.8299 16.5131 12.9192 16.9079C12.0083 17.3026 11.0361 17.5 10.0025 17.5C8.96875 17.5 7.99569 17.3026 7.08333 16.9079ZM10 16.6731C10.4893 16.0449 10.8926 15.4279 11.21 14.8221C11.5272 14.2164 11.7852 13.5385 11.984 12.7885H8.01604C8.23618 13.5812 8.49951 14.2804 8.80604 14.8862C9.11271 15.4919 9.51069 16.0876 10 16.6731ZM8.93917 16.5481C8.55028 16.0898 8.19528 15.5233 7.87417 14.8485C7.55319 14.1738 7.31417 13.4872 7.15708 12.7885H3.96146C4.4391 13.8248 5.11618 14.6747 5.99271 15.3381C6.86937 16.0016 7.85153 16.4049 8.93917 16.5481ZM11.0608 16.5481C12.1485 16.4049 13.1306 16.0016 14.0073 15.3381C14.8838 14.6747 15.5609 13.8248 16.0385 12.7885H12.8429C12.6325 13.4978 12.3667 14.1899 12.0456 14.8646C11.7247 15.5393 11.3964 16.1005 11.0608 16.5481ZM3.62188 11.9552H6.98396C6.9209 11.6133 6.87632 11.2801 6.85021 10.9558C6.82396 10.6317 6.81083 10.3131 6.81083 10C6.81083 9.68694 6.82396 9.36833 6.85021 9.04417C6.87632 8.71986 6.9209 8.38674 6.98396 8.04479H3.62188C3.53104 8.33326 3.46021 8.64764 3.40937 8.98792C3.35868 9.32819 3.33333 9.66556 3.33333 10C3.33333 10.3344 3.35868 10.6718 3.40937 11.0121C3.46021 11.3524 3.53104 11.6667 3.62188 11.9552ZM7.81729 11.9552H12.1827C12.2458 11.6133 12.2903 11.2855 12.3165 10.9719C12.3427 10.6584 12.3558 10.3344 12.3558 10C12.3558 9.66556 12.3427 9.3416 12.3165 9.02812C12.2903 8.71451 12.2458 8.38674 12.1827 8.04479H7.81729C7.75424 8.38674 7.70965 8.71451 7.68354 9.02812C7.65729 9.3416 7.64417 9.66556 7.64417 10C7.64417 10.3344 7.65729 10.6584 7.68354 10.9719C7.70965 11.2855 7.75424 11.6133 7.81729 11.9552ZM13.016 11.9552H16.3781C16.469 11.6667 16.5398 11.3524 16.5906 11.0121C16.6413 10.6718 16.6667 10.3344 16.6667 10C16.6667 9.66556 16.6413 9.32819 16.5906 8.98792C16.5398 8.64764 16.469 8.33326 16.3781 8.04479H13.016C13.0791 8.38674 13.1237 8.71986 13.1498 9.04417C13.176 9.36833 13.1892 9.68694 13.1892 10C13.1892 10.3131 13.176 10.6317 13.1498 10.9558C13.1237 11.2801 13.0791 11.6133 13.016 11.9552ZM12.8429 7.21146H16.0385C15.5502 6.15382 14.8811 5.30396 14.0312 4.66188C13.1814 4.01979 12.1912 3.61111 11.0608 3.43583C11.4497 3.94764 11.7994 4.53285 12.1098 5.19146C12.4202 5.85021 12.6646 6.52354 12.8429 7.21146ZM8.01604 7.21146H11.984C11.7638 6.42951 11.4924 5.72229 11.1698 5.08979C10.8472 4.45729 10.4572 3.86965 10 3.32688C9.54278 3.86965 9.15285 4.45729 8.83021 5.08979C8.50757 5.72229 8.23618 6.42951 8.01604 7.21146ZM3.96146 7.21146H7.15708C7.33542 6.52354 7.57979 5.85021 7.89021 5.19146C8.20062 4.53285 8.55028 3.94764 8.93917 3.43583C7.79806 3.61111 6.80528 4.02243 5.96083 4.66979C5.11625 5.31729 4.44979 6.16451 3.96146 7.21146Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </svg></div>
+                                <div>Global</div>
+                            </div>
+                        </div>
+                        <div class="card-text-wrapper">
+                            <div class="display-xs">Lorem ipsum dolor amet</div>
+                            <div>Lorem ipsum dolor sit amet consectetur. Ac proin elit facilisi turpis aliquet sit
+                                vivamus urna egt lobortis nec volutpat.</div>
+                        </div>
+                    </div>
+                    <div class="button secondary">
+                        <div>Learn more</div>
+                    </div>
+                </a>
+            </div>
+            <div class="event-pagination">
+                <div class="button icon secondary disabled" style="pointer-events: none; opacity: 0.4;">
+                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M19 12H5M12 5L5 12L12 19" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
-                <div class="event-pagination">
-                    <div class="button icon secondary disabled" style="pointer-events: none; opacity: 0.4;">
-                        <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none">
-                                <path d="M19 12H5M12 5L5 12L12 19" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg></div>
-                    </div>
-                    <div class="button icon secondary">
-                        <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none">
-                                <path d="M5 12H19M12 19L19 12L12 5" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg></div>
-                    </div>
+                <div class="button icon secondary">
+                    <div class="tag-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M12 19L19 12L12 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const form = document.querySelector(".event-filter-form");
-          const collection = document.querySelector(".event-collection");
-          const cards = document.querySelectorAll(".event-collection .card");
-          const emptyState = document.querySelector(".event-collection .empty");
-          const pagination = document.querySelector(".event-pagination");
-          const paginationButtons = pagination
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector(".event-filter-form");
+        const collection = document.querySelector(".event-collection");
+        const cards = document.querySelectorAll(".event-collection .card");
+        const emptyState = document.querySelector(".event-collection .empty");
+        const pagination = document.querySelector(".event-pagination");
+        const paginationButtons = pagination
             ? pagination.querySelectorAll(".button")
             : [];
-        
-          const prevButton = paginationButtons[0];
-          const nextButton = paginationButtons[1];
-        
-          const itemsPerPage = 6;
-          let currentPage = 1;
-          let filteredCards = [];
-        
-          if (!form || !collection || !cards.length) return;
-        
-          function clean(value) {
+
+        const prevButton = paginationButtons[0];
+        const nextButton = paginationButtons[1];
+
+        const itemsPerPage = 6;
+        let currentPage = 1;
+        let filteredCards = [];
+
+        if (!form || !collection || !cards.length) return;
+
+        function clean(value) {
             return (value || "").trim().toLowerCase();
-          }
-        
-          function formatText(value) {
+        }
+
+        function formatText(value) {
             return (value || "").trim();
-          }
-        
-          function getSelectedValue(names) {
+        }
+
+        function getSelectedValue(names) {
             for (const name of names) {
-              const checkedInput = form.querySelector(`input[name="${name}"]:checked`);
-        
-              if (checkedInput) {
-                return clean(checkedInput.value);
-              }
+                const checkedInput = form.querySelector(`input[name="${name}"]:checked`);
+
+                if (checkedInput) {
+                    return clean(checkedInput.value);
+                }
             }
-        
+
             return "all";
-          }
-        
-          function setTagText(card, selector, text) {
+        }
+
+        function setTagText(card, selector, text) {
             const tag = card.querySelector(selector);
             if (!tag || !text) return;
-        
+
             const textDivs = tag.querySelectorAll("div");
             const lastDiv = textDivs[textDivs.length - 1];
-        
+
             if (lastDiv) {
-              lastDiv.textContent = text;
+                lastDiv.textContent = text;
             } else {
-              tag.textContent = text;
+                tag.textContent = text;
             }
-          }
-        
-          function updateCheckedClasses() {
+        }
+
+        function updateCheckedClasses() {
             const radioInputs = form.querySelectorAll('input[type="radio"]');
-        
+
             radioInputs.forEach((input) => {
-              const radioLabel = input.closest(".radio");
-              if (!radioLabel) return;
-        
-              if (input.checked) {
-                radioLabel.classList.add("checked");
-              } else {
-                radioLabel.classList.remove("checked");
-              }
+                const radioLabel = input.closest(".radio");
+                if (!radioLabel) return;
+
+                if (input.checked) {
+                    radioLabel.classList.add("checked");
+                } else {
+                    radioLabel.classList.remove("checked");
+                }
             });
-          }
-        
-          function setupCardTags(card) {
+        }
+
+        function setupCardTags(card) {
             const cardType = clean(card.dataset.type);
             const cardDate = formatText(card.dataset.date);
             const cardRegion = formatText(card.dataset.region);
-        
+
             const eventTag = card.querySelector(".tag.type-event");
             const checklistTag = card.querySelector(".tag.type-checklist");
             const dateTag = card.querySelector(".tag.date");
-        
+
             if (eventTag) {
-              eventTag.style.display = cardType === "event" ? "" : "none";
+                eventTag.style.display = cardType === "event" ? "" : "none";
             }
-        
+
             if (checklistTag) {
-              checklistTag.style.display = cardType === "checklist" ? "" : "none";
+                checklistTag.style.display = cardType === "checklist" ? "" : "none";
             }
-        
+
             if (dateTag) {
-              if (cardDate) {
-                dateTag.style.display = "";
-                setTagText(card, ".tag.date", cardDate);
-              } else {
-                dateTag.style.display = "none";
-              }
+                if (cardDate) {
+                    dateTag.style.display = "";
+                    setTagText(card, ".tag.date", cardDate);
+                } else {
+                    dateTag.style.display = "none";
+                }
             }
-        
+
             if (cardRegion) {
-              setTagText(card, ".tag.region", cardRegion);
+                setTagText(card, ".tag.region", cardRegion);
             }
-          }
-        
-          function getFilteredCards() {
+        }
+
+        function getFilteredCards() {
             const selectedRegion = getSelectedValue(["region"]);
             const selectedCountry = getSelectedValue(["countries", "Countries"]);
             const selectedType = getSelectedValue(["type"]);
             const selectedMonth = getSelectedValue(["month"]);
-        
+
             return Array.from(cards).filter((card) => {
-              const cardRegion = clean(card.dataset.region);
-              const cardCountry = clean(card.dataset.country);
-              const cardType = clean(card.dataset.type);
-              const cardMonth = clean(card.dataset.month);
-        
-              const regionMatch =
-                selectedRegion === "all" ||
-                cardRegion === selectedRegion;
-        
-              const countryMatch =
-                selectedCountry === "all" ||
-                cardCountry === selectedCountry;
-        
-              const typeMatch =
-                selectedType === "all" ||
-                cardType === selectedType;
-        
-              const monthMatch =
-                selectedMonth === "all" ||
-                cardMonth === selectedMonth;
-        
-              return (
-                regionMatch &&
-                countryMatch &&
-                typeMatch &&
-                monthMatch
-              );
+                const cardRegion = clean(card.dataset.region);
+                const cardCountry = clean(card.dataset.country);
+                const cardType = clean(card.dataset.type);
+                const cardMonth = clean(card.dataset.month);
+
+                const regionMatch =
+                    selectedRegion === "all" ||
+                    cardRegion === selectedRegion;
+
+                const countryMatch =
+                    selectedCountry === "all" ||
+                    cardCountry === selectedCountry;
+
+                const typeMatch =
+                    selectedType === "all" ||
+                    cardType === selectedType;
+
+                const monthMatch =
+                    selectedMonth === "all" ||
+                    cardMonth === selectedMonth;
+
+                return (
+                    regionMatch &&
+                    countryMatch &&
+                    typeMatch &&
+                    monthMatch
+                );
             });
-          }
-        
-          function updatePaginationButtons(totalPages) {
+        }
+
+        function updatePaginationButtons(totalPages) {
             if (!pagination) return;
-        
+
             if (totalPages <= 1) {
-              pagination.style.display = "none";
-              return;
+                pagination.style.display = "none";
+                return;
             }
-        
+
             pagination.style.display = "";
-        
+
             if (prevButton) {
-              prevButton.classList.toggle("disabled", currentPage === 1);
-              prevButton.style.pointerEvents = currentPage === 1 ? "none" : "";
-              prevButton.style.opacity = currentPage === 1 ? "0.4" : "";
+                prevButton.classList.toggle("disabled", currentPage === 1);
+                prevButton.style.pointerEvents = currentPage === 1 ? "none" : "";
+                prevButton.style.opacity = currentPage === 1 ? "0.4" : "";
             }
-        
+
             if (nextButton) {
-              nextButton.classList.toggle("disabled", currentPage === totalPages);
-              nextButton.style.pointerEvents = currentPage === totalPages ? "none" : "";
-              nextButton.style.opacity = currentPage === totalPages ? "0.4" : "";
+                nextButton.classList.toggle("disabled", currentPage === totalPages);
+                nextButton.style.pointerEvents = currentPage === totalPages ? "none" : "";
+                nextButton.style.opacity = currentPage === totalPages ? "0.4" : "";
             }
-          }
-        
-          function renderCards() {
+        }
+
+        function renderCards() {
             const totalResults = filteredCards.length;
             const totalPages = Math.ceil(totalResults / itemsPerPage);
-        
+
             cards.forEach((card) => {
-              card.style.display = "none";
+                card.style.display = "none";
             });
-        
+
             if (emptyState) {
-              emptyState.style.display = totalResults === 0 ? "" : "none";
+                emptyState.style.display = totalResults === 0 ? "" : "none";
             }
-        
+
             if (totalResults === 0) {
-              updatePaginationButtons(0);
-              return;
+                updatePaginationButtons(0);
+                return;
             }
-        
+
             if (currentPage > totalPages) {
-              currentPage = totalPages;
+                currentPage = totalPages;
             }
-        
+
             const startIndex = (currentPage - 1) * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
-        
+
             filteredCards.slice(startIndex, endIndex).forEach((card) => {
-              card.style.display = "";
+                card.style.display = "";
             });
-        
+
             updatePaginationButtons(totalPages);
-          }
-        
-          function filterCards() {
+        }
+
+        function filterCards() {
             filteredCards = getFilteredCards();
             currentPage = 1;
             renderCards();
-          }
-        
-          function updateEverything() {
+        }
+
+        function updateEverything() {
             updateCheckedClasses();
             filterCards();
-          }
-        
-          cards.forEach(setupCardTags);
-        
-          form.addEventListener("change", updateEverything);
-        
-          form.addEventListener("submit", function (e) {
-            e.preventDefault();
-          });
-        
-          if (prevButton) {
-            prevButton.addEventListener("click", function () {
-              if (currentPage > 1) {
-                currentPage--;
-                renderCards();
-              }
-            });
-          }
-        
-          if (nextButton) {
-            nextButton.addEventListener("click", function () {
-              const totalPages = Math.ceil(filteredCards.length / itemsPerPage);
-        
-              if (currentPage < totalPages) {
-                currentPage++;
-                renderCards();
-              }
-            });
-          }
-        
-          updateEverything();
-        });
-        </script>
-</body>
+        }
 
-</html>
+        cards.forEach(setupCardTags);
+
+        form.addEventListener("change", updateEverything);
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+        });
+
+        if (prevButton) {
+            prevButton.addEventListener("click", function () {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderCards();
+                }
+            });
+        }
+
+        if (nextButton) {
+            nextButton.addEventListener("click", function () {
+                const totalPages = Math.ceil(filteredCards.length / itemsPerPage);
+
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderCards();
+                }
+            });
+        }
+
+        updateEverything();
+    });
+</script>
