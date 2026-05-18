@@ -79,7 +79,7 @@ body {
   min-height: 100%;
   color: var(--color-text);
   background-color: transparent;
-  font-family: "Google Sans", "Google Sans Flex", sans-serif;
+  font-family: "Google Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
