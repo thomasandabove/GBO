@@ -23,6 +23,7 @@
   grid-column-gap: 0.5rem;
   grid-row-gap: 0.5rem;
   padding: 1.25rem 2rem;
+  font-family: "Google Sans", "Google Sans Flex", sans-serif;
   color: var(--color-text);
   font-weight: 500;
   cursor: pointer;
