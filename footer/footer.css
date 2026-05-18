@@ -1,0 +1,24 @@
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer-logo {
+    display: flex;
+  }
+  
+  .footer-links {
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+  }
+  
+  .footer-dot {
+    background-color: #4682f4;
+    border-radius: 100%;
+    width: .375rem;
+    height: .375rem;
+  }
