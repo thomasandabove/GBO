@@ -25,11 +25,7 @@
   --color-brand-yellow: #fabe04;
   --color-brand-gray: #80868b;
 
-  /* Legacy aliases used in Webflow exports */
-  --border: var(--color-border);
-  --text-main: var(--color-text);
-
-  --container-max: 75rem;
+  --container-max: 1270px;
   --radius-card: 3rem;
   --radius-card-sm: 2rem;
   --radius-pill: 100vw;
@@ -84,7 +80,7 @@ body {
   color: var(--color-text);
   background-color: transparent;
   font-family: "Google Sans", "Google Sans Flex", sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -154,29 +150,6 @@ svg:not(:root) {
   clear: both;
 }
 
-.w-block {
-  display: block;
-}
-
-.w-hidden {
-  display: none;
-}
-
-.w-clearfix::before,
-.w-clearfix::after {
-  content: " ";
-  display: table;
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-.w-clearfix::after {
-  clear: both;
-}
-
-html.w-mod-touch * {
-  background-attachment: scroll !important;
-}
-
 
 /* =========================================================
    UTILITIES
@@ -232,11 +205,6 @@ html.w-mod-touch * {
 .section {
   display: flex;
   padding: 10rem 2rem;
-  overflow: hidden;
-}
-
-.section.black {
-  background-color: var(--color-primary);
 }
 
 .container {
@@ -351,14 +319,11 @@ html.w-mod-touch * {
   font-size: 4.5rem;
   font-weight: 500;
   line-height: 1.1;
-  text-align: center;
 }
 
 .display-lg {
   font-size: 3rem;
   font-weight: 500;
-  line-height: 1.25;
-  text-align: center;
 }
 
 .display-md {
@@ -390,7 +355,7 @@ html.w-mod-touch * {
 .display-xs {
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .display-xs.text-weight-normal {
@@ -419,33 +384,6 @@ html.w-mod-touch * {
 
 .text-size-xlarge.text-weight-medium {
   font-weight: 500;
-}
-
-.card-heading {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.card-heading.text-weight-medium {
-  font-weight: 500;
-}
-
-.card-heading.text-weight-normal {
-  font-weight: 400;
-}
-
-.hero-sub-text {
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.hero-sub-text.text-weight-medium {
-  font-weight: 500;
-}
-
-.hero-sub-text.text-weight-normal {
-  font-weight: 400;
 }
 
 
@@ -662,7 +600,7 @@ html.w-mod-touch * {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  height: 28rem;
+  height: 380px;
   text-align: center;
 }
 
@@ -688,7 +626,7 @@ html.w-mod-touch * {
 .subhero_heading-underline {
   position: absolute;
   z-index: -1;
-  inset: auto 0% 0.25rem;
+  inset: auto 0% 0.75rem;
   width: 100%;
   height: 20px;
   background-color: var(--color-accent);
@@ -724,7 +662,7 @@ html.w-mod-touch * {
 }
 
 .subhero-sub-text-wrapper {
-  max-width: 40.5625rem;
+  max-width: 640px;
 }
 
 .subhero_heading-icon.is-training {
@@ -788,7 +726,7 @@ html.w-mod-touch * {
 .button.icon.secondary {
   color: var(--color-text);
   background-color: var(--color-white);
-  border-color: var(--color-border);
+  border-color: var(--color-primary);
 }
 
 .button.icon.secondary:hover {
