@@ -606,6 +606,7 @@ svg:not(:root) {
   align-items: center;
   height: 380px;
   text-align: center;
+  border-bottom: #202124;
 }
 
 .subhero-container.is-resources {
