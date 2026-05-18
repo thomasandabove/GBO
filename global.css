@@ -604,7 +604,7 @@ svg:not(:root) {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  height: 380px;
+  height: 340px;
   text-align: center;
   border: 1px solid #202124;
 }
