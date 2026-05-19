@@ -58,6 +58,10 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0.5rem;
+  font-weight: 400;
+}
+
+.features-slide-list .text-weight-medium {
   font-weight: 500;
 }
 
