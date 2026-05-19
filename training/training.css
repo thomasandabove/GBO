@@ -39,7 +39,6 @@
   width: 50%;
 }
 
-/* Training date tag (from home Home Tag) */
 .training-date-tag {
   grid-column-gap: 4px;
   grid-row-gap: 4px;
@@ -51,7 +50,8 @@
   font-weight: 500;
   display: flex;
   position: absolute;
-  inset: -1.25rem 0% auto auto;
+  inset: 1.25rem 1.25rem auto auto;
+  z-index: 10;
 }
 
 .training-date-tag_text-wrapper {
