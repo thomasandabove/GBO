@@ -612,7 +612,8 @@ svg:not(:root) {
 }
 
 .subhero-container.is-resources {
-  height: 520px;
+  height: 480px;
+  border: 1px solid #202124;
 }
 
 .subhero_heading {
