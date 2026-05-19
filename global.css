@@ -159,7 +159,7 @@ svg:not(:root) {
 ========================================================= */
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .hide.is-important {
