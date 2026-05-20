@@ -736,8 +736,33 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const tabColorClasses = ['is-blue', 'is-red', 'is-yellow', 'is-green', 'is-gray'];
-
     const tabs = document.querySelectorAll('.pitch_tab');
+
+    function openDropdown(dropdown) {
+      const content = dropdown.querySelector('.pitch_dropdown-content');
+      if (!content) return;
+
+      dropdown.classList.add('open');
+      content.style.height = content.scrollHeight + 'px';
+
+      setTimeout(() => {
+        if (dropdown.classList.contains('open')) {
+          content.style.height = 'auto';
+        }
+      }, 600);
+    }
+
+    function closeDropdown(dropdown) {
+      const content = dropdown.querySelector('.pitch_dropdown-content');
+      if (!content) return;
+
+      content.style.height = content.scrollHeight + 'px';
+
+      requestAnimationFrame(() => {
+        dropdown.classList.remove('open');
+        content.style.height = '0px';
+      });
+    }
 
     tabs.forEach((tab) => {
       const links = tab.querySelectorAll('.pitch_tab-link');
@@ -746,12 +771,10 @@
       if (!links.length || !panels.length) return;
 
       function updateTabColorClass(activeLink) {
-        // Remove existing colour classes from .pitch_tab
         tabColorClasses.forEach((className) => {
           tab.classList.remove(className);
         });
 
-        // Add the colour class from the selected tab link
         tabColorClasses.forEach((className) => {
           if (activeLink.classList.contains(className)) {
             tab.classList.add(className);
@@ -762,32 +785,39 @@
       function showPanel(activeIndex) {
         links.forEach((link, index) => {
           link.classList.toggle('open', index === activeIndex);
+          link.classList.toggle('is-open', index === activeIndex);
         });
 
         panels.forEach((panel, index) => {
           panel.style.display = index === activeIndex ? 'block' : 'none';
+
+          const dropdowns = panel.querySelectorAll('.pitch_dropdown');
+
+          dropdowns.forEach((dropdown) => {
+            dropdown.classList.remove('open');
+
+            const content = dropdown.querySelector('.pitch_dropdown-content');
+            if (content) {
+              content.style.height = '0px';
+            }
+          });
         });
 
         const activeLink = links[activeIndex];
+        const activePanel = panels[activeIndex];
+
         updateTabColorClass(activeLink);
 
-        // Refresh dropdown heights inside the active panel
-        const activePanel = panels[activeIndex];
-        const openDropdowns = activePanel.querySelectorAll('.pitch_dropdown.open');
-
-        openDropdowns.forEach((dropdown) => {
-          const content = dropdown.querySelector('.pitch_dropdown-content');
-
-          if (content) {
-            content.style.height = 'auto';
-          }
-        });
+        const firstDropdown = activePanel.querySelector('.pitch_dropdown');
+        if (firstDropdown) {
+          openDropdown(firstDropdown);
+        }
       }
 
-      // Start on the link that already has .open
-      let startingIndex = Array.from(links).findIndex((link) => link.classList.contains('open'));
+      let startingIndex = Array.from(links).findIndex((link) =>
+        link.classList.contains('open') || link.classList.contains('is-open')
+      );
 
-      // Fallback to first tab
       if (startingIndex === -1) {
         startingIndex = 0;
       }
@@ -809,40 +839,13 @@
 
       if (!trigger || !content) return;
 
-      // Set starting state
-      if (dropdown.classList.contains('open')) {
-        content.style.height = content.scrollHeight + 'px';
-
-        setTimeout(() => {
-          if (dropdown.classList.contains('open')) {
-            content.style.height = 'auto';
-          }
-        }, 600);
-      } else {
-        content.style.height = '0px';
-      }
-
       trigger.addEventListener('click', function () {
         const isOpen = dropdown.classList.contains('open');
 
         if (isOpen) {
-          // Close
-          content.style.height = content.scrollHeight + 'px';
-
-          requestAnimationFrame(() => {
-            dropdown.classList.remove('open');
-            content.style.height = '0px';
-          });
+          closeDropdown(dropdown);
         } else {
-          // Open
-          dropdown.classList.add('open');
-          content.style.height = content.scrollHeight + 'px';
-
-          setTimeout(() => {
-            if (dropdown.classList.contains('open')) {
-              content.style.height = 'auto';
-            }
-          }, 600);
+          openDropdown(dropdown);
         }
       });
     });

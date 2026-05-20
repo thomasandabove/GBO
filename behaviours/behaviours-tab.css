@@ -228,4 +228,5 @@
 .pitch_dropdown-content-inner .pitch_dropdown-inline-link:focus {
   color: #fff;
   text-decoration: underline;
+  font-weight: 500;
 }
