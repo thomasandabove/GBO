@@ -422,6 +422,7 @@ svg:not(:root) {
   background-color: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-card);
+  width: 100%;
 }
 
 .card.w-inline-block {
