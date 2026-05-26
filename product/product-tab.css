@@ -26,10 +26,16 @@
 }
 
 .tab-note a {
-  color: var(--color-primary);
+  color: var(--color-text);
   font-weight: 500;
   text-decoration: underline;
   text-underline-offset: 0.15em;
+  transition: color 0.2s ease;
+}
+
+.tab-note a:hover,
+.tab-note a:focus-visible {
+  color: var(--color-accent);
 }
 
 .tab-button {
