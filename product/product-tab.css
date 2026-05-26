@@ -139,6 +139,7 @@
   flex-wrap: wrap;
   grid-column-gap: 0.5rem;
   grid-row-gap: 0.5rem;
+  padding-top: 1rem;
 }
 
 .tag.product-banner-badge {
@@ -245,9 +246,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  grid-column-gap: 0.75rem;
+  grid-column-gap: 0.5rem;
   grid-row-gap: 0.75rem;
   color: var(--color-text);
+  padding-bottom: 1rem;
 }
 
 .product-dropdown-section-heading .product-dropdown-section-icon {
