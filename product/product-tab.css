@@ -13,6 +13,7 @@
   grid-row-gap: 0.5rem;
   padding: 0.5rem;
   border-radius: var(--radius-pill);
+  background-color: var(--color-white);
   box-shadow: 0 0 8px -4px #20212408, 0 2px 24px -4px #20212414;
 }
 
@@ -232,7 +233,7 @@
   flex-flow: column;
   margin-top: 6rem;
   grid-column-gap: 3rem;
-  grid-row-gap: 3rem;
+  grid-row-gap: 1rem;
 }
 
 .product-dropdown-section {
@@ -250,6 +251,10 @@
   grid-row-gap: 0.75rem;
   color: var(--color-text);
   padding-bottom: 1rem;
+}
+
+.product-dropdown-section-heading .is-app {
+padding-top: 3rem;
 }
 
 .product-dropdown-section-heading .product-dropdown-section-icon {

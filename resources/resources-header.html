@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="https://gbo.pages.dev/global.css">
 <div class="subhero-container is-resources">
     <div class="subhero_heading">
-        <div class="subhero_heading-underline-wrapper"><span class="display-3xl">Resource</span>
+        <div class="subhero_heading-underline-wrapper"><span class="display-3xl">Resources</span>
             <div class="subhero_heading-underline"></div>
-        </div><span class="display-3xl">&nbsp;</span><span class="display-3xl">Kit </span>
+        </div>
         <div class="subhero_heading-arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="216" height="210"
                 viewBox="0 0 216 210" fill="none">
                 <path d="M10.118 106.036C13.5394 99.4808 20.9815 96.3979 27.8265 98.2373" stroke="#202124"
@@ -16,10 +16,10 @@
             </svg></div>
     </div>
     <div class="subhero-sub-text-wrapper">
-        <div class="display-xs">Reference the latest products, tools, and learning materials, updated quarterly. Now you can outpace your competition with all the information that’s new and noteworthy.</div>
+        <p>Reference the latest products, tools, and events, updated quarterly. Now you can outpace your competition with all the information that's new and noteworthy.</p>
     </div>
-    <div class="subhero-button-wrapper"><a href="#" class="button w-inline-block">
-            <div>Download Q3 FDOB Resource Kit</div>
+    <div class="subhero-button-wrapper"><a href="https://docs.google.com/presentation/d/1LIlG9wNdGutFXHU1SwahOjK5mxauVyrfV_U_T2g4edg/edit?slide=id.g3e4f8c3bc8c_0_631#slide=id.g3e4f8c3bc8c_0_631" class="button w-inline-block">
+            <div>Download the Q3 FDOB Resource Kit</div>
             <div class="icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                     fill="none">
                     <path
@@ -28,3 +28,28 @@
                 </svg></div>
         </a></div>
 </div>
+
+<script>
+    function animateSubheroUnderline() {
+      const underline = document.querySelector(".subhero_heading-underline");
+  
+      if (!underline) return;
+  
+      underline.style.width = "0%";
+      underline.style.transition = "none";
+      underline.style.overflow = "hidden";
+  
+      underline.offsetWidth;
+  
+      requestAnimationFrame(() => {
+        underline.style.transition = "width 600ms ease 200ms";
+        underline.style.width = "100%";
+      });
+    }
+  
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", animateSubheroUnderline);
+    } else {
+      animateSubheroUnderline();
+    }
+</script>

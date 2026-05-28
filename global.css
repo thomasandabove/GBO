@@ -683,6 +683,7 @@ svg:not(:root) {
 
 .subhero-sub-text-wrapper {
   max-width: 640px;
+  font-size: 1.25rem;
 }
 
 .subhero_heading-icon.is-training {
