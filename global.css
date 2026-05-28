@@ -686,6 +686,10 @@ svg:not(:root) {
   font-size: 1.25rem;
 }
 
+.template-hero-sub-text-wrapper {
+  font-size: 1.25rem;
+}
+
 .subhero_heading-icon.is-training {
   margin-left: 0;
   margin-right: 0;
