@@ -358,6 +358,7 @@
   margin-top: 6rem;
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
+  display: none;
 }
 
 .product-bottom-section-title {
