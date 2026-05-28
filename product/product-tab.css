@@ -253,8 +253,8 @@
   padding-bottom: 1rem;
 }
 
-.product-dropdown-section-heading .is-app {
-padding-top: 3rem;
+.product-dropdown-section-heading.is-app {
+  padding-top: 3rem;
 }
 
 .product-dropdown-section-heading .product-dropdown-section-icon {
