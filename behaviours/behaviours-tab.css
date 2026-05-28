@@ -226,7 +226,20 @@
 .pitch_dropdown-content-inner .pitch_dropdown-inline-link:hover,
 .pitch_dropdown-content-inner .pitch_dropdown-inline-link:active,
 .pitch_dropdown-content-inner .pitch_dropdown-inline-link:focus {
-  color: #fff;
+  color: var(--color-text);
   text-decoration: underline;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+.pitch_dropdown.is-gray .pitch_dropdown-content-inner .pitch_dropdown-inline-link,
+.pitch_dropdown.is-gray .pitch_dropdown-content-inner .pitch_dropdown-inline-link:visited,
+.pitch_dropdown.is-gray .pitch_dropdown-content-inner .pitch_dropdown-inline-link:hover,
+.pitch_dropdown.is-gray .pitch_dropdown-content-inner .pitch_dropdown-inline-link:active,
+.pitch_dropdown.is-gray .pitch_dropdown-content-inner .pitch_dropdown-inline-link:focus,
+.pitch_dropdown.is-yellow .pitch_dropdown-content-inner .pitch_dropdown-inline-link,
+.pitch_dropdown.is-yellow .pitch_dropdown-content-inner .pitch_dropdown-inline-link:visited,
+.pitch_dropdown.is-yellow .pitch_dropdown-content-inner .pitch_dropdown-inline-link:hover,
+.pitch_dropdown.is-yellow .pitch_dropdown-content-inner .pitch_dropdown-inline-link:active,
+.pitch_dropdown.is-yellow .pitch_dropdown-content-inner .pitch_dropdown-inline-link:focus {
+  color: #fff;
 }

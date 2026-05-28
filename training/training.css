@@ -10,6 +10,7 @@
 .card.is-training-impact {
   background-color: var(--color-surface-blue);
   border-style: none;
+  height: 100%
 }
 
 .training-img {
