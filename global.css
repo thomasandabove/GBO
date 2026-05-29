@@ -625,7 +625,7 @@ svg:not(:root) {
 }
 
 .subhero-container.is-resources {
-  height: 460px;
+  height: 340px;
 }
 
 .subhero_heading {
@@ -687,7 +687,7 @@ svg:not(:root) {
 }
 
 .template-hero-sub-text-wrapper {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .subhero_heading-icon.is-training {
